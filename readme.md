@@ -9,7 +9,6 @@
 
 
 
-# React - Tests project
+# React Boilerplate
 
-This projects contains a project with tests. I have this project here so that I can go back
-and have a look if i need it.
+Bootstrapping react app development.
