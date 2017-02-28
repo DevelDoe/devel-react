@@ -13,7 +13,7 @@ var expect = require('expect')
 
 
 describe('Tests', () => {
-    it('working', () => {
+    it('exist', () => {
         expect(1).toBe(1)
     })
 })
