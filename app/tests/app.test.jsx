@@ -12,8 +12,8 @@
 var expect = require('expect')
 
 
-describe('App', () => {
-    it('test suit working', () => {
+describe('Tests', () => {
+    it('working', () => {
         expect(1).toBe(1)
     })
 })
