@@ -4,12 +4,14 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   andreeray
-@Last modified time: 2017-03-03T22:26:35+01:00
+@Last modified time: 2017-03-03T22:28:45+01:00
 -->
 
 
 
 # React - develPlate
+
+Bootstrapping react app development. 
 
 ## Install
 
@@ -35,16 +37,16 @@ webpack -w
 node server.js
 ```
 
-Bootstrapping react app development.
 
-Contains
- * react
- * react-dom
- * react-router
- * babel
- * expect
- * karma
- * mocha
- * jquery
- * sass
- * webpack
+## Contains
+
+* react
+* react-dom
+* react-router
+* babel
+* expect
+* karma
+* mocha
+* jquery
+* sass
+* webpack
