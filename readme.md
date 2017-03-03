@@ -4,11 +4,23 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   andreeray
-@Last modified time: 2017-02-26T15:22:25+01:00
+@Last modified time: 2017-03-03T22:21:24+01:00
 -->
 
 
 
-# React Boilerplate
+# React - develPlate
 
 Bootstrapping react app development.
+
+Contains
+ * react
+ * react-dom
+ * react-router
+ * babel
+ * expect
+ * karma
+ * mocha
+ * jquery
+ * sass
+ * webpack
