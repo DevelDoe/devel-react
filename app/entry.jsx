@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: Entry.jsx
 * @Last modified by:   andreeray
-* @Last modified time: 2017-03-03T22:22:16+01:00
+* @Last modified time: 2017-03-03T22:33:28+01:00
 */
 
 var React = require('react'), ReactDOM = require('react-dom'), {Route,Router,IndexRoute,hashHistory} = require('react-router')
@@ -13,6 +13,6 @@ var React = require('react'), ReactDOM = require('react-dom'), {Route,Router,Ind
 require('style!css!sass!styles')
 
 ReactDOM.render(
-    <p>Boilerplate</p>,
+    <p>React - DevelPlate</p>,
     document.getElementById('app')
 )
