@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   andreeray
-@Last modified time: 2017-03-03T22:25:40+01:00
+@Last modified time: 2017-03-03T22:26:35+01:00
 -->
 
 
@@ -32,8 +32,8 @@ webpack -w
 ## run
 
 ```
-node start
-``` 
+node server.js
+```
 
 Bootstrapping react app development.
 
