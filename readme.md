@@ -4,12 +4,36 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   andreeray
-@Last modified time: 2017-03-03T22:21:24+01:00
+@Last modified time: 2017-03-03T22:25:40+01:00
 -->
 
 
 
 # React - develPlate
+
+## Install
+
+```
+ npm install
+```
+
+## test
+
+```
+ npm test
+```
+
+## webpack
+
+```
+webpack -w
+```
+
+## run
+
+```
+node start
+``` 
 
 Bootstrapping react app development.
 
