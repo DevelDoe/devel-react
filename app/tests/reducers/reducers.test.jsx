@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: reducers.test.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-10T01:05:51+01:00
+* @Last modified time: 2017-03-10T01:28:26+01:00
 */
 
 var Expect = require('expect'), Reducers = require('reducers'), DeepFreeze = require('deep-freeze-strict')
@@ -13,10 +13,10 @@ describe('Redux Reducers', () => {
     describe('appNameReducer', () => {
         it('CHANGE_APP_NAME', () => {
             var action = {
-                type: 'CHANGE_NAME',
+                type: 'CHANGE_APP_NAME',
                 appName: 'test'
             }
-            var res = Reducers.appNameReducer(DeepFreeze(''),DeepFreeze(action))
+            var res = Reducers.appNameReducer(DeepFreeze('Anonymous'),DeepFreeze(action))
             Expect(res).toEqual(action.appName)
         })
     })

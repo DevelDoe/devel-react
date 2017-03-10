@@ -4,14 +4,14 @@
 * @Email:  me@andreeray.se
 * @Filename: Entry.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-10T01:07:11+01:00
+* @Last modified time: 2017-03-10T01:25:55+01:00
 */
 
 var React = require('react'), ReactDOM = require('react-dom'), {Route,Router,IndexRoute,hashHistory} = require('react-router'), {Provider} = require('react-redux'), store = require('store').store(), actions = require('actions'), App = require('App')
 
 var unsubscribe = store.subscribe(() =>{})
 
-store.dispatch(actions.changeAppName('React DevelPlate'))
+store.dispatch(actions.changeAppName('React - DevelPlate'))
 store.dispatch(actions.addMovie('Star Wars','Sci-Fi'))
 store.dispatch(actions.addMovie('Logan','Action'))
 store.dispatch(actions.addMovie('Mad Max','Action'))

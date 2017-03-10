@@ -4,12 +4,12 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-10T01:00:51+01:00
+* @Last modified time: 2017-03-10T01:27:31+01:00
 */
 
 
 
-export var appNameReducer = (state = 'appName', action) =>
+export var appNameReducer = (state = 'Anonymous', action) =>
 {
     switch (action.type)
     {
