@@ -1,15 +1,16 @@
 {
   "name": "react-develplate",
-  "version": "1.0.2",
-  "description": "Bootstrapping react, react-router, and karma",
+  "version": "2.0.0",
+  "description": "Bootstrapping react app development, now with Redux",
   "main": "entry.jsx",
   "scripts": {
     "test": "karma start",
-    "start": "node server.js"
+    "start": "supervisor server.js"
   },
   "author": "Andree DevelDoe Ray <me@andreeray.se> (http://andreeray.se)",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.15.3",
     "express": "^4.14.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
@@ -21,9 +22,8 @@
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.22.0",
-    "css-loader": "^0.23.1",
+    "deep-freeze-strict": "^1.1.1",
     "expect": "^1.14.0",
-    "jquery": "^3.1.1",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.2",
     "karma-mocha": "^0.2.2",
@@ -31,11 +31,10 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.4.5",
-    "node-sass": "^4.5.0",
     "react-addons-test-utils": "^0.14.6",
-    "sass-loader": "^6.0.1",
-    "script-loader": "^0.6.1",
-    "style-loader": "^0.13.0",
+    "react-redux": "^5.0.3",
+    "redux": "^3.3.1",
+    "redux-thunk": "^2.0.1",
     "webpack": "^1.12.13"
   }
 }

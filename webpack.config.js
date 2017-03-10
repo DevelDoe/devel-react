@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: webpack.config.js
 * @Last modified by:   andreeray
-* @Last modified time: 2017-03-03T22:17:57+01:00
+* @Last modified time: 2017-03-06T22:45:06+01:00
 */
 
 
@@ -13,17 +13,7 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: [
-        'script!jquery/dist/jquery.min.js',
         './app/entry.jsx'
-    ],
-    externals: {
-        jquery: 'jQuery'
-    },
-    plugins: [
-        new webpack.ProvidePlugin({
-            '$': 'jquery',
-            'jquery': 'jquery'
-        })
     ],
     output: {
         path: __dirname,
@@ -36,7 +26,9 @@ module.exports = {
             './app/components'
         ],
         alias: {
-            styles: 'app/styles/app.scss'
+            actions: 'app/actions/actions',
+            reducers: 'app/reducers/reducers',
+            store: 'app/store/store'
         },
         extensions: ['','.js','.jsx']
     },

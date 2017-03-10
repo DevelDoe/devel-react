@@ -1,17 +1,17 @@
 /**
-* @Author: Andreee Ray <andreeray>
-* @Date:   2017-03-03T22:16:49+01:00
+* @Author: Andreee Ray <DevelDoe>
+* @Date:   2017-03-03T20:26:47+01:00
 * @Email:  me@andreeray.se
 * @Filename: server.js
-* @Last modified by:   andreeray
-* @Last modified time: 2017-03-03T22:23:28+01:00
+* @Last modified by:   develdoe
+* @Last modified time: 2017-03-10T00:52:05+01:00
 */
 
 
 
 const   EXPRESS = require('express'),
         APP     = EXPRESS(),
-        PORT = process.env.PORT || 5000
+        PORT = process.env.PORT || 3002
 
 APP.use(function(req,res,next){
     if (req.headers['x-forwarded-proto'] === 'https') {
