@@ -39,3 +39,7 @@ Thumbs.db
 # Packages #
 ######################
 node_modules
+
+# bundle #
+######################
+bundle.js
