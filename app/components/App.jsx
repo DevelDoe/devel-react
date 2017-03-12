@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-10T01:13:05+01:00
+* @Last modified time: 2017-03-12T19:02:26+01:00
 */
 
 
@@ -22,10 +22,7 @@ var App = React.createClass({
             })
         }
         return (<div>
-            <span>Application name: </span>
-            <ul>
-                <li>{appName}</li>
-            </ul>
+            <h1>{appName}</h1>
             <span>Application movie array entries: </span>
             <ul>
                 {renderMovies()}
