@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-12T18:51:22+01:00
+@Last modified time: 2017-03-12T18:52:18+01:00
 -->
 
 
@@ -15,14 +15,14 @@ Bootstrapping react app development, now with Redux
 
 ## Bundling
 
-This project is bundling with webpack and the usual plugins, like babel to use ES2015. 
+This project is bundling with webpack and the usual plugins, like babel to use ES2015.
 
 ## Testing
 
 There is also a comprehensive tests suit included to get you up and running. We are using karma, mocha and expect as our suit.
 In order to learn how to set up your test, beside the included examples,  please visit [mjackson/expect](https://github.com/mjackson/expect).
 
-# Redux
+## Redux
 
 The redux implementation is ready to use with redux devtools extension in chrome and you have 3 different type of states to start you up:
 
