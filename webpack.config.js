@@ -3,8 +3,8 @@
 * @Date:   2017-02-20T13:54:23+01:00
 * @Email:  me@andreeray.se
 * @Filename: webpack.config.js
-* @Last modified by:   andreeray
-* @Last modified time: 2017-03-06T22:45:06+01:00
+* @Last modified by:   develdoe
+* @Last modified time: 2017-03-12T18:53:22+01:00
 */
 
 
@@ -13,7 +13,7 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: [
-        './app/entry.jsx'
+        './app/app/app.jsx'
     ],
     output: {
         path: __dirname,
