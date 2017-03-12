@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-12T18:52:18+01:00
+@Last modified time: 2017-03-12T18:58:39+01:00
 -->
 
 
@@ -44,13 +44,9 @@ webpack
 ```
 
 ```
-node server.js
-```
-
-```
 npm test
 ```
 
 ```
-npm start
+node server.js
 ```
