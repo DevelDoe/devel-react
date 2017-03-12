@@ -4,18 +4,18 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-12T18:49:13+01:00
+@Last modified time: 2017-03-12T18:51:22+01:00
 -->
 
 
 
 # React - develPlate
 
-Bootstrapping react app development, now with Redux.
+Bootstrapping react app development, now with Redux
 
 ## Bundling
 
-This project is bundling with webpack and the usual plugins, like babel to use ES2015.
+This project is bundling with webpack and the usual plugins, like babel to use ES2015. 
 
 ## Testing
 
