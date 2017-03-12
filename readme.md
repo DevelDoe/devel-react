@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-12T18:42:22+01:00
+@Last modified time: 2017-03-12T18:43:29+01:00
 -->
 
 
@@ -13,9 +13,9 @@
 
 Bootstrapping react app development, now with Redux.
 
-## Webpack
+## Bundling
 
-This project is of corse bundling with webpack and the usual plugins, like babel to use ES2015.
+This project is bundling with webpack and the usual plugins, like babel to use ES2015.
 
 ## Testing
 
