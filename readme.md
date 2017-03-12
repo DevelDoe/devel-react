@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-12T18:47:11+01:00
+@Last modified time: 2017-03-12T18:49:13+01:00
 -->
 
 
@@ -39,20 +39,18 @@ The redux implementation is ready to use with redux devtools extension in chrome
 npm install
 ```
 
-### bundle
-
 ```
 webpack
 ```
-
-### run
 
 ```
 node server.js
 ```
 
-### test
-
 ```
 npm test
+```
+
+```
+npm start
 ```
