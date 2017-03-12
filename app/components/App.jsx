@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-12T19:02:26+01:00
+* @Last modified time: 2017-03-12T19:15:15+01:00
 */
 
 
@@ -13,32 +13,57 @@ var React = require('react'), {connect} = require('react-redux'), Movie = requir
 
 var App = React.createClass({
     render: function () {
-        var {appName,movies,map} = this.props
-        var renderMovies = () => {
-            return movies.map((movie) => {
+        var {appName,array,map} = this.props
+
+        var renderArray = () => {
+
+            if (array.length > 0) {
+                return (
+                    <div id="array">
+                        <h2>The Array:</h2>
+                        <ul>
+                            {getArrayItems()}
+                        </ul>
+                    </div>
+                )
+            }
+        }
+
+        var getArrayItems = () => {
+            return array.map((movie) => {
                 return (
                     <Movie key={movie.id} {...movie} />
                 )
             })
         }
-        return (<div>
-            <h1>{appName}</h1>
-            <span>Application movie array entries: </span>
-            <ul>
-                {renderMovies()}
-            </ul>
-            <span>Application api demo: </span>
-            <ul>
-                <li>{map.url}</li>
-            </ul>
-        </div>)
+
+        var renderApi = () => {
+            if (map.url){
+                return (
+                    <div id="api">
+                        <h2>The Api</h2>
+                            <p>{map.url}</p>
+                    </div>
+                )
+            }
+        }
+
+        return (
+            <div>
+                <div id="appname">
+                    <h2>{appName}</h2>
+                </div>
+                {renderArray()}
+                {renderApi()}
+            </div>
+        )
     }
 })
 module.exports = connect(
     (state) => {
         return {
             appName: state.appName,
-            movies: state.movies,
+            array: state.movies,
             map: state.map
         }
     }
