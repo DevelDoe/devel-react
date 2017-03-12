@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-12T18:46:40+01:00
+@Last modified time: 2017-03-12T18:47:11+01:00
 -->
 
 
@@ -42,7 +42,7 @@ npm install
 ### bundle
 
 ```
-webpack -w
+webpack
 ```
 
 ### run
