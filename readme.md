@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-12T18:44:45+01:00
+@Last modified time: 2017-03-12T18:46:25+01:00
 -->
 
 
@@ -24,11 +24,13 @@ In order to learn how to set up your test, beside the included examples,  please
 
 # Redux
 
-You have 3 different type of states to start you up. The first is just a plan simple variable state.
-Second you have an array type and last you have an example of an api call implementation. This should
-give you a good start regarding states.
+The redux implementation is ready to use with redux devtools extension in chrome and you have 3 different type of states to start you up:
 
-The redux implementation is ready to use with redux devtools extension in chrome.
+* Simple text field
+* An array
+* api call .
+
+
 
 
 ----
