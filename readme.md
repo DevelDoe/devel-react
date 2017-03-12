@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-12T18:43:52+01:00
+@Last modified time: 2017-03-12T18:44:45+01:00
 -->
 
 
@@ -20,7 +20,7 @@ This project is bundling with webpack and the usual plugins, like babel to use E
 ## Testing
 
 There is also a comprehensive tests suit included to get you up and running. We are using karma, mocha and expect as our suit.
-In order to learn how to set up your test please visit [mjackson/expect](https://github.com/mjackson/expect).
+In order to learn how to set up your test, beside the included examples,  please visit [mjackson/expect](https://github.com/mjackson/expect).
 
 # Redux
 
