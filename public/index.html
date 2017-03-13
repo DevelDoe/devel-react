@@ -4,21 +4,54 @@
 @Email:  me@andreeray.se
 @Filename: index.html
 @Last modified by:   develdoe
-@Last modified time: 2017-03-12T19:00:03+01:00
+@Last modified time: 2017-03-13T17:11:36+01:00
 -->
 <!DOCTYPE html>
 <html>
 <head>
     <!-- META ################################### -->
-    <title>Implementing Redux</title>
+    <title>DevelPlate</title>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SCROLLS ################################ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
-    <style> body, a { background: #252525; color: #ccc; } </style>
+    <!-- Styles that needs to be applied before react goes here -->
+    <style>
+    body, a {
+        background: #252525;
+        color: #ccc; }
+    #status{
+        position: fixed;
+        top:10px;
+        left:10px;
+        font-size: 12px;
+    }
+    .splash-dot {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .blink {
+         animation-duration: .2s;
+         animation-name: blink;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+         animation-timing-function: ease-in-out;
+     }
+     @keyframes blink {
+         from { opacity: 1; }
+         to { opacity: 0; }
+     }
+    </style>
 </head>
 <body>
     <!-- WORLD ################################## -->
-    <div id=app></div>
+    <div id=app>
+        <div id="status">
+            <ul id="application-status">
+                <li>Loading <span class="blink">.</span></li>
+            </ul>
+        </div>
+    </div>
     <!-- SPELLS ################################# -->
     <script src=bundle.js></script>

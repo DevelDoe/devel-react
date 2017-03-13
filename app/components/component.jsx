@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-13T13:57:09+01:00
+* @Last modified time: 2017-03-13T19:02:14+01:00
 */
 
 
@@ -27,17 +27,15 @@ var App = React.createClass({
                     </div>
                 )
             }
-        }
-
-        var getArrayItems = () => {
+        },
+        getArrayItems = () => {
             return array.map((movie) => {
                 return (
                     <Item key={movie.id} {...movie} />
                 )
             })
-        }
-
-        var renderApi = () => {
+        },
+        renderApi = () => {
             if (map.url){
                 return (
                     <div id="api">
@@ -46,17 +44,20 @@ var App = React.createClass({
                     </div>
                 )
             }
+        },
+        renderApplication = () => {
+            return (
+                <div>
+                    <div id="appname">
+                        <h2>{appName}</h2>
+                    </div>
+                    {renderArray()}
+                    {renderApi()}
+                </div>
+            )
         }
 
-        return (
-            <div>
-                <div id="appname">
-                    <h2>{appName}</h2>
-                </div>
-                {renderArray()}
-                {renderApi()}
-            </div>
-        )
+        return renderApplication()
     }
 })
 module.exports = connect(

@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-10T00:59:51+01:00
+* @Last modified time: 2017-03-13T17:29:17+01:00
 */
 
 var axios = require('axios')
@@ -14,6 +14,17 @@ export var changeAppName = (appName) =>
     return {
         type: 'CHANGE_APP_NAME',
         appName
+    }
+}
+export var addStatus = (status) => {
+    return {
+        type: 'ADD_STATUS',
+        status
+    }
+}
+export var removeStatus = () => {
+    return {
+        type: 'REMOVE_STATUS',
     }
 }
 export var addMovie = (title,genre) =>

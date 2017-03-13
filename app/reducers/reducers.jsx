@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-10T01:27:31+01:00
+* @Last modified time: 2017-03-13T17:27:10+01:00
 */
 
 
@@ -15,6 +15,21 @@ export var appNameReducer = (state = 'Anonymous', action) =>
     {
         case 'CHANGE_APP_NAME':
             return action.appName
+        default:
+            return state
+    }
+}
+export var appStatusReducer = (state = [], action) => {
+    switch (action.type) {
+        case 'ADD_STATUS':
+            return [
+                ...state,
+                {
+                    status: action.status
+                }
+            ]
+        case 'REMOVE_STATUS':
+            return undefined
         default:
             return state
     }

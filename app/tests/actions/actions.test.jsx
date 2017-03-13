@@ -4,19 +4,34 @@
 * @Email:  me@andreeray.se
 * @Filename: actions.test.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-10T01:03:21+01:00
+* @Last modified time: 2017-03-13T17:30:59+01:00
 */
 
-var Expect = require('expect'), Actions = require('actions')
+var Expect = require('expect'), actions = require('actions')
 
-describe('Redux Actions', () => {
+describe('Redux actions', () => {
     it('changeAppName', () => {
         var action = {
             type: 'CHANGE_APP_NAME',
             appName: 'test'
         }
-        var res = Actions.changeAppName(action.appName)
+        var res = actions.changeAppName(action.appName)
         Expect(res).toEqual(action)
+    })
+    it('addStatus', () => {
+        var action = {
+            type: 'ADD_STATUS',
+            status: 'test'
+        }
+        var res = actions.addStatus(action.status)
+        Expect(res.status).toEqual(action.status)
+    })
+    it('removeStatus', () => {
+        var action = {
+            type: 'REMOVE_STATUS',
+        }
+        var res = actions.removeStatus(action)
+        Expect(res.type).toEqual(action.type)
     })
     it('addMovie', () => {
         var action = {
@@ -24,7 +39,7 @@ describe('Redux Actions', () => {
             title: 'test',
             genre: 'test'
         }
-        var res = Actions.addMovie(action.title, action.genre)
+        var res = actions.addMovie(action.title, action.genre)
         Expect(res).toEqual(action)
     })
     it('removeMovie', () => {
@@ -32,14 +47,14 @@ describe('Redux Actions', () => {
             type: 'REMOVE_MOVIE',
             id: 0
         }
-        var res = Actions.removeMovie(action.id)
+        var res = actions.removeMovie(action.id)
         Expect(res).toEqual(action)
     })
     it('startLocationFetch', () => {
         var action = {
             type: 'START_LOCATION_FETCH'
         }
-        var res = Actions.startLocationFetch()
+        var res = actions.startLocationFetch()
         Expect(res).toEqual(action)
     })
     it('completeLocationFetch', () => {
@@ -47,7 +62,7 @@ describe('Redux Actions', () => {
             type: 'COMPLETE_LOCATION_FETCH',
             url: 'test'
         }
-        var res = Actions.completeLocationFetch(action.url)
+        var res = actions.completeLocationFetch(action.url)
         Expect(res).toEqual(action)
     })
 })

@@ -4,16 +4,17 @@
 * @Email:  me@andreeray.se
 * @Filename: configStore.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-10T01:01:19+01:00
+* @Last modified time: 2017-03-13T18:57:51+01:00
 */
 
 
-var redux = require('redux'), thunk = require('redux-thunk').default, {appNameReducer, moviesReducer, mapReducer} = require('reducers')
+var redux = require('redux'), thunk = require('redux-thunk').default, {appNameReducer, appStatusReducer, moviesReducer, mapReducer} = require('reducers')
 
 export var store = () => {
     var reducer = redux.combineReducers(
     {
         appName: appNameReducer,
+        appStatus: appStatusReducer,
         movies: moviesReducer,
         map : mapReducer
     })

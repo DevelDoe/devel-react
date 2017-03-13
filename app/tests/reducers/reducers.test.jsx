@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: reducers.test.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-10T01:28:26+01:00
+* @Last modified time: 2017-03-13T17:26:08+01:00
 */
 
 var Expect = require('expect'), Reducers = require('reducers'), DeepFreeze = require('deep-freeze-strict')
@@ -18,6 +18,45 @@ describe('Redux Reducers', () => {
             }
             var res = Reducers.appNameReducer(DeepFreeze('Anonymous'),DeepFreeze(action))
             Expect(res).toEqual(action.appName)
+        })
+    })
+    describe('appStatusReducer', () => {
+        it('ADD_STATUS', () => {
+            var action = {
+                type: 'ADD_STATUS',
+                status: 'test'
+            }
+            var res = Reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
+            Expect(res.length).toEqual(1)
+            Expect(res[0].status).toEqual(action.status)
+        })
+        it('REMOVE_STATUS', () => {
+            var action = {
+                type: 'REMOVE_STATUS'
+            }
+            var res = Reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
+            Expect(res).toEqual(undefined)
+        })
+        it('Should be able to add status after remove statue', () => {
+            var action = {
+                type: 'ADD_STATUS',
+                status: 'test'
+            }
+            var res = Reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
+            Expect(res.length).toEqual(1)
+            Expect(res[0].status).toEqual(action.status)
+            var action = {
+                type: 'REMOVE_STATUS'
+            }
+            var res = Reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
+            Expect(res).toEqual(undefined)
+            var action = {
+                type: 'ADD_STATUS',
+                status: 'test'
+            }
+            var res = Reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
+            Expect(res.length).toEqual(1)
+            Expect(res[0].status).toEqual(action.status)
         })
     })
     describe('moviesReducer', () => {
