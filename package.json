@@ -1,7 +1,7 @@
 {
-  "name": "react-develplate",
-  "version": "2.0.0",
-  "description": "Bootstrapping react app development, now with Redux",
+  "name": "react-component-firebase",
+  "version": "0.0.0",
+  "description": "A Firebase implement.",
   "main": "entry.jsx",
   "scripts": {
     "test": "karma start",
@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "express": "^4.14.1",
+    "firebase": "^3.7.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^3.0.2"

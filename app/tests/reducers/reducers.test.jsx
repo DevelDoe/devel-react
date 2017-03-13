@@ -4,20 +4,20 @@
 * @Email:  me@andreeray.se
 * @Filename: reducers.test.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-13T17:26:08+01:00
+* @Last modified time: 2017-03-13T20:51:27+01:00
 */
 
-var Expect = require('expect'), Reducers = require('reducers'), DeepFreeze = require('deep-freeze-strict')
+var expect = require('expect'), reducers = require('reducers'), DeepFreeze = require('deep-freeze-strict')
 
-describe('Redux Reducers', () => {
+describe('Redux reducers', () => {
     describe('appNameReducer', () => {
         it('CHANGE_APP_NAME', () => {
             var action = {
                 type: 'CHANGE_APP_NAME',
                 appName: 'test'
             }
-            var res = Reducers.appNameReducer(DeepFreeze('Anonymous'),DeepFreeze(action))
-            Expect(res).toEqual(action.appName)
+            var res = reducers.appNameReducer(DeepFreeze('Anonymous'),DeepFreeze(action))
+            expect(res).toEqual(action.appName)
         })
     })
     describe('appStatusReducer', () => {
@@ -26,37 +26,16 @@ describe('Redux Reducers', () => {
                 type: 'ADD_STATUS',
                 status: 'test'
             }
-            var res = Reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
-            Expect(res.length).toEqual(1)
-            Expect(res[0].status).toEqual(action.status)
+            var res = reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
+            expect(res.length).toEqual(1)
+            expect(res[0]).toEqual(action.status)
         })
-        it('REMOVE_STATUS', () => {
+        it('CLEAR_STATUS', () => {
             var action = {
-                type: 'REMOVE_STATUS'
+                type: 'CLEAR_STATUS'
             }
-            var res = Reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
-            Expect(res).toEqual(undefined)
-        })
-        it('Should be able to add status after remove statue', () => {
-            var action = {
-                type: 'ADD_STATUS',
-                status: 'test'
-            }
-            var res = Reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
-            Expect(res.length).toEqual(1)
-            Expect(res[0].status).toEqual(action.status)
-            var action = {
-                type: 'REMOVE_STATUS'
-            }
-            var res = Reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
-            Expect(res).toEqual(undefined)
-            var action = {
-                type: 'ADD_STATUS',
-                status: 'test'
-            }
-            var res = Reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
-            Expect(res.length).toEqual(1)
-            Expect(res[0].status).toEqual(action.status)
+            var res = reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
+            expect(res).toEqual([undefined])
         })
     })
     describe('moviesReducer', () => {
@@ -67,11 +46,11 @@ describe('Redux Reducers', () => {
                 title: 'test',
                 genre: 'test'
             }
-            var res = Reducers.moviesReducer(DeepFreeze([]),DeepFreeze(action))
-            Expect(res.length).toEqual(1)
-            Expect(res[0].id).toEqual(action.id)
-            Expect(res[0].title).toEqual(action.title)
-            Expect(res[0].genre).toEqual(action.genre)
+            var res = reducers.moviesReducer(DeepFreeze([]),DeepFreeze(action))
+            expect(res.length).toEqual(1)
+            expect(res[0].id).toEqual(action.id)
+            expect(res[0].title).toEqual(action.title)
+            expect(res[0].genre).toEqual(action.genre)
         })
         it('REMOVE_MOVIE', () => {
             var action = {
@@ -80,15 +59,15 @@ describe('Redux Reducers', () => {
                 title: 'test',
                 genre: 'test'
             }
-            var res = Reducers.moviesReducer(DeepFreeze([]),DeepFreeze(action))
-            Expect(res.length).toEqual(1)
+            var res = reducers.moviesReducer(DeepFreeze([]),DeepFreeze(action))
+            expect(res.length).toEqual(1)
             var action = {
                 type: 'REMOVE_MOVIE',
                 id: 0
             }
-            var res = Reducers.moviesReducer(DeepFreeze([]),DeepFreeze(action))
-            Expect(res.length).toEqual(0)
-            Expect(res[0]).toNotExist()
+            var res = reducers.moviesReducer(DeepFreeze([]),DeepFreeze(action))
+            expect(res.length).toEqual(0)
+            expect(res[0]).toNotExist()
         })
     })
     describe('mapReducer', () => {
@@ -96,18 +75,18 @@ describe('Redux Reducers', () => {
             var action = {
                 type: 'START_LOCATION_FETCH',
             }
-            var res = Reducers.mapReducer(DeepFreeze(false,undefined),DeepFreeze(action))
-            Expect(res.isFetching).toEqual(true)
-            Expect(res.url).toEqual(undefined)
+            var res = reducers.mapReducer(DeepFreeze(false,undefined),DeepFreeze(action))
+            expect(res.isFetching).toEqual(true)
+            expect(res.url).toEqual(undefined)
         })
         it('COMPLETE_LOCATION_FETCH', () => {
             var action = {
                 type: 'COMPLETE_LOCATION_FETCH',
                 url: 'test'
             }
-            var res = Reducers.mapReducer(DeepFreeze(false,undefined),DeepFreeze(action))
-            Expect(res.isFetching).toEqual(false)
-            Expect(res.url).toEqual(action.url)
+            var res = reducers.mapReducer(DeepFreeze(false,undefined),DeepFreeze(action))
+            expect(res.isFetching).toEqual(false)
+            expect(res.url).toEqual(action.url)
         })
     })
 })

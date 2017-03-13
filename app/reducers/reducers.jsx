@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-13T17:27:10+01:00
+* @Last modified time: 2017-03-13T20:50:40+01:00
 */
 
 
@@ -24,12 +24,12 @@ export var appStatusReducer = (state = [], action) => {
         case 'ADD_STATUS':
             return [
                 ...state,
-                {
-                    status: action.status
-                }
+                action.status
             ]
-        case 'REMOVE_STATUS':
-            return undefined
+        case 'CLEAR_STATUS':
+            return [
+                undefined
+            ]
         default:
             return state
     }

@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: actions.test.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-13T17:30:59+01:00
+* @Last modified time: 2017-03-13T20:51:16+01:00
 */
 
 var Expect = require('expect'), actions = require('actions')
@@ -19,19 +19,20 @@ describe('Redux actions', () => {
         Expect(res).toEqual(action)
     })
     it('addStatus', () => {
+        var status = ['test','test']
         var action = {
             type: 'ADD_STATUS',
-            status: 'test'
+            status
         }
-        var res = actions.addStatus(action.status)
-        Expect(res.status).toEqual(action.status)
+        var res = actions.addStatus(status)
+        Expect(res).toEqual(action)
     })
-    it('removeStatus', () => {
+    it('clearStatus', () => {
         var action = {
-            type: 'REMOVE_STATUS',
+            type: 'CLEAR_STATUS',
         }
-        var res = actions.removeStatus(action)
-        Expect(res.type).toEqual(action.type)
+        var res = actions.clearStatus(action)
+        Expect(res).toEqual(action)
     })
     it('addMovie', () => {
         var action = {
