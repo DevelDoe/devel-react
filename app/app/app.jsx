@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-13T20:52:16+01:00
+* @Last modified time: 2017-03-13T21:19:14+01:00
 */
 
 var React = require('react'),
@@ -20,11 +20,13 @@ var store = require('store').store(),
 var unsubscribe = store.subscribe(() =>{})
 
 // Examples
-store.dispatch(actions.changeAppName('Firebase'))
-
-// Database
-// ########################################
-import '../firebase/firebase'
+store.dispatch(actions.changeAppName('DevelDevilsStrap'))
+store.dispatch(actions.changeAppName('DevelPlate'))
+store.dispatch(actions.addMovie('Star Wars','Sci-fi'))
+store.dispatch(actions.addMovie('Mad Max','Action'))
+store.dispatch(actions.addMovie('Logan','Action'))
+store.dispatch(actions.removeMovie(1))
+store.dispatch(actions.fetchLocation())
 
 // Bootstraping
 // ########################################
@@ -39,10 +41,6 @@ ul.appendChild(li);
 
 // This shows up when react renders
 store.dispatch(actions.addStatus('Rendering'))
-
-
-
-
 
 
 ReactDOM.render(<Provider store={store}><Component/></Provider>, document.getElementById('app'))

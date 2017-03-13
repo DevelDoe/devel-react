@@ -4,14 +4,14 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-13T20:04:32+01:00
+@Last modified time: 2017-03-13T21:17:25+01:00
 -->
 
 
 
-# React - Firebase
+# React - DevelPlate
 
-A Firebase implement.
+Bootstrapping react app development, now with Redu
 
 ## Bundling
 
