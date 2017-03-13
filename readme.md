@@ -9,7 +9,7 @@
 
 
 
-# React - DevelPlate
+# DevelStrap
 
 Bootstrapping react app development, now with Redu
 
