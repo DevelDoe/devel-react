@@ -4,14 +4,14 @@
 * @Email:  me@andreeray.se
 * @Filename: Movie.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-10T01:02:19+01:00
+* @Last modified time: 2017-03-13T13:57:16+01:00
 */
 
 
 
 var React = require('react'), {connect} = require('react-redux')
 
-var Movie = React.createClass({
+var Item = React.createClass({
     render: function () {
         var {title,genre} = this.props
         return (
@@ -19,4 +19,4 @@ var Movie = React.createClass({
         )
     }
 })
-module.exports = connect()(Movie)
+module.exports = connect()(Item)

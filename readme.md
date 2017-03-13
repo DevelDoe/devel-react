@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-12T18:58:39+01:00
+@Last modified time: 2017-03-13T13:56:14+01:00
 -->
 
 
@@ -30,6 +30,9 @@ The redux implementation is ready to use with redux devtools extension in chrome
 * An array
 * api call
 
+## Serving
+
+npm start uses supervisor, install it globaly (as I do), or localy.
 
 ----
 

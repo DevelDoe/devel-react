@@ -4,12 +4,12 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-12T19:15:15+01:00
+* @Last modified time: 2017-03-13T13:57:09+01:00
 */
 
 
 
-var React = require('react'), {connect} = require('react-redux'), Movie = require('Movie')
+var React = require('react'), {connect} = require('react-redux'), Item = require('item')
 
 var App = React.createClass({
     render: function () {
@@ -32,7 +32,7 @@ var App = React.createClass({
         var getArrayItems = () => {
             return array.map((movie) => {
                 return (
-                    <Movie key={movie.id} {...movie} />
+                    <Item key={movie.id} {...movie} />
                 )
             })
         }
