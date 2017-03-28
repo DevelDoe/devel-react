@@ -3,8 +3,8 @@
 * @Date:   2017-03-13T13:54:41+01:00
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
-* @Last modified by:   develdoe
-* @Last modified time: 2017-03-13T21:19:14+01:00
+ * @Last modified by:   develdoe
+ * @Last modified time: 2017-03-28T11:43:50+02:00
 */
 
 var React = require('react'),
@@ -20,7 +20,10 @@ var store = require('store').store(),
 var unsubscribe = store.subscribe(() =>{})
 
 // Examples
-store.dispatch(actions.changeAppName('DevelDevilsStrap'))
+var appName = "DevelStrap"
+store.dispatch(actions.changeAppName(appName))
+document.title = appName
+
 store.dispatch(actions.changeAppName('DevelPlate'))
 store.dispatch(actions.addMovie('Star Wars','Sci-fi'))
 store.dispatch(actions.addMovie('Mad Max','Action'))
