@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-29T18:30:48+02:00
+@Last modified time: 2017-03-29T18:31:19+02:00
 -->
 
 
@@ -46,6 +46,9 @@ npm install -g supervisor
 ### Building & Testing
 
 `npm install` to initialy install your npm modules
+
 `webpack` to bundle your files, use `webpack -w` to autogenerate the bundle on the fly.
-`npm test` to run your test suit 
-`npm start` to start your server
+
+`npm test` to run your test suit.
+
+`npm start` to start your server.
