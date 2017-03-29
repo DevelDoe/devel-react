@@ -4,27 +4,30 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-13T21:17:25+01:00
+@Last modified time: 2017-03-29T18:28:47+02:00
 -->
 
 
 
-# DevelStrap
+# DevelStrap, React & redux
 
-Bootstrapping react app development, now with Redu
+Bootstrapping React app development.
 
-## Bundling
+## Webpack & Babel
 
-This project is bundling with webpack and the usual plugins, like babel to use ES2015.
+You will need to have Webpack installed globally in order to build the applicatinon.
+The project uses Babel with react, es2015, stage-0 presets.
 
-## Testing
+## Test Suit
 
-There is also a comprehensive tests suit included to get you up and running. We are using karma, mocha and expect as our suit.
-In order to learn how to set up your test, beside the included examples,  please visit [mjackson/expect](https://github.com/mjackson/expect).
+There is also a comprehensive test suit, with karma, mocha and expect, included to get you up and running with testing.
+In order to learn how to set up test, beside the included examples,  please visit [mjackson/expect](https://github.com/mjackson/expect).
+I also have a repo with comprehensive test cases at [DevelTests](https://github.com/AndreeDeveldoeRay/DevelTests)
 
 ## Redux
 
-The redux implementation is ready to use with redux devtools extension in chrome and you have 3 different type of states to start you up:
+The Redux implementation is ready to use with redux devtools extension in chrome, you need to install this,.
+There is tree different types of state cases included to get you started.
 
 * Simple text field
 * An array
@@ -32,24 +35,17 @@ The redux implementation is ready to use with redux devtools extension in chrome
 
 ## Serving
 
-npm start uses supervisor, install it globaly (as I do), or localy.
+You will need to have Supervisor installed globally in order to use `npm start`
+
+```bash
+npm install -g supervisor
+```
 
 ----
 
-### Install
+### Building & Testing
 
-```
-npm install
-```
-
-```
-webpack
-```
-
-```
-npm test
-```
-
-```
-node server.js
-```
+`npm install` to initialy install your npm modules
+`webpack` to bundle your files, use `webpack -w` to autogenerate the bundle on the fly.
+`npm test` to run your test suit
+`node server.js` to start your server

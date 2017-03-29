@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-03-28T11:43:50+02:00
+ * @Last modified time: 2017-03-28T15:27:59+02:00
 */
 
 var React = require('react'),
@@ -17,14 +17,12 @@ var store = require('store').store(),
 
 // Redux
 // ######################################
-var unsubscribe = store.subscribe(() =>{})
+var unsubscribe = store.subscribe(() =>{
+    var state = store.getState()
+    document.title = state.appName
+})
 
-// Examples
-var appName = "DevelStrap"
-store.dispatch(actions.changeAppName(appName))
-document.title = appName
-
-store.dispatch(actions.changeAppName('DevelPlate'))
+store.dispatch(actions.changeAppName('DevelStrap'))
 store.dispatch(actions.addMovie('Star Wars','Sci-fi'))
 store.dispatch(actions.addMovie('Mad Max','Action'))
 store.dispatch(actions.addMovie('Logan','Action'))
