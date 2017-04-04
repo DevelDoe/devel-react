@@ -3,8 +3,8 @@
 * @Date:   2017-03-05T16:09:24+01:00
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
-* @Last modified by:   develdoe
-* @Last modified time: 2017-03-13T20:50:14+01:00
+ * @Last modified by:   develdoe
+ * @Last modified time: 2017-03-31T23:06:27+02:00
 */
 
 var axios = require('axios')
@@ -53,10 +53,12 @@ export var fetchLocation = () =>
     return (dispatch, getState) =>
     {
         dispatch(startLocationFetch())
+        // You have to install es-6 promise for this to work for <= IE 11
         axios.get('http://ipinfo.io').then(function (res) {
             var loc = res.data.loc
             var baseUrl = 'http://maps.google.com?q='
             dispatch(completeLocationFetch(baseUrl+loc))
+            dispatch(clearStatus())
         })
     }
 }

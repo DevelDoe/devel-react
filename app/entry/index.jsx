@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-03-28T15:27:59+02:00
+ * @Last modified time: 2017-03-30T13:58:51+02:00
 */
 
 var React = require('react'),
@@ -39,9 +39,9 @@ var li = document.createElement("li");
 li.appendChild(document.createTextNode(''));
 li.innerHTML = 'Scripting <span class="blink">.</span>'
 ul.appendChild(li);
+document.title = "Scripting"
 
-// This shows up when react renders
+// This shows up when react starts rendering
 store.dispatch(actions.addStatus('Rendering'))
-
 
 ReactDOM.render(<Provider store={store}><Component/></Provider>, document.getElementById('app'))
