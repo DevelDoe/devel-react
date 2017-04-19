@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-04-19T16:31:58+02:00
+@Last modified time: 2017-04-19T16:33:13+02:00
 -->
 
 
@@ -52,7 +52,7 @@ npm install -g supervisor
 
 `npm start` to start your server.
 
-##Release log
+## Release log
 
 * 0.0 Inital branch
     * 0.1 Install modules:
