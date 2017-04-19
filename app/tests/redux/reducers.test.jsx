@@ -3,13 +3,13 @@
 * @Date:   2017-03-07T03:27:20+01:00
 * @Email:  me@andreeray.se
 * @Filename: reducers.test.jsx
-* @Last modified by:   develdoe
-* @Last modified time: 2017-03-13T20:51:27+01:00
+ * @Last modified by:   develdoe
+ * @Last modified time: 2017-04-05T22:01:33+02:00
 */
 
 var expect = require('expect'), reducers = require('reducers'), DeepFreeze = require('deep-freeze-strict')
 
-describe('Redux reducers', () => {
+describe('reducers', () => {
     describe('appNameReducer', () => {
         it('CHANGE_APP_NAME', () => {
             var action = {
@@ -21,21 +21,13 @@ describe('Redux reducers', () => {
         })
     })
     describe('appStatusReducer', () => {
-        it('ADD_STATUS', () => {
+        it('CHANGE_STATUS', () => {
             var action = {
-                type: 'ADD_STATUS',
+                type: 'CHANGE_STATUS',
                 status: 'test'
             }
             var res = reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
-            expect(res.length).toEqual(1)
-            expect(res[0]).toEqual(action.status)
-        })
-        it('CLEAR_STATUS', () => {
-            var action = {
-                type: 'CLEAR_STATUS'
-            }
-            var res = reducers.appStatusReducer(DeepFreeze([]),DeepFreeze(action))
-            expect(res).toEqual([undefined])
+            expect(res).toEqual(action.status)
         })
     })
     describe('moviesReducer', () => {

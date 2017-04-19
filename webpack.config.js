@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: webpack.config.js
  * @Last modified by:   develdoe
- * @Last modified time: 2017-03-28T15:07:14+02:00
+ * @Last modified time: 2017-04-05T22:07:53+02:00
 */
 
 

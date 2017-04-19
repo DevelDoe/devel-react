@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-03-31T23:06:41+02:00
+ * @Last modified time: 2017-04-05T22:12:40+02:00
 */
 
 
@@ -15,10 +15,11 @@ var React = require('react'),
     actions = require('actions')
 
 var App = React.createClass({
+
     componentWillMount() {
-        this.props.dispatch(actions.addStatus('Painting'))
         document.title = this.props.appName + "test"
     },
+
     render: function () {
         var {appName, appStatus, array, map} = this.props
 
@@ -53,7 +54,7 @@ var App = React.createClass({
             }
         },
         renderApplication = () => {
-            if (!appStatus[0]) { // [undefined] = idle
+            if (appStatus === "idle") {
                 return (
                     <div>
                         <div id="appname">
@@ -65,11 +66,8 @@ var App = React.createClass({
                 )
             } else {
                 return (
-                    <div id="status">
-                        <ul id="application-status">
-                            <li>Loading </li>
-                            <li>Scripting <span className="blink">.</span></li>
-                        </ul>
+                    <div>
+                        <span className="blink">{appStatus}</span>
                     </div>
                 )
             }

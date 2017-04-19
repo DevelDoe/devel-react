@@ -3,13 +3,13 @@
 * @Date:   2017-03-05T16:09:36+01:00
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
-* @Last modified by:   develdoe
-* @Last modified time: 2017-03-13T20:50:40+01:00
+ * @Last modified by:   develdoe
+ * @Last modified time: 2017-04-05T21:58:36+02:00
 */
 
 
 
-export var appNameReducer = (state = 'Anonymous', action) =>
+export var appNameReducer = (state = 'appName', action) =>
 {
     switch (action.type)
     {
@@ -19,17 +19,11 @@ export var appNameReducer = (state = 'Anonymous', action) =>
             return state
     }
 }
-export var appStatusReducer = (state = [], action) => {
-    switch (action.type) {
-        case 'ADD_STATUS':
-            return [
-                ...state,
-                action.status
-            ]
-        case 'CLEAR_STATUS':
-            return [
-                undefined
-            ]
+export var appStatusReducer = (state = "idle", action) => {
+    switch (action.type)
+    {
+        case 'CHANGE_STATUS':
+            return action.status
         default:
             return state
     }
