@@ -4,7 +4,7 @@
  * @Email:  me@andreeray.se
  * @Filename: actions.test.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-05T22:03:46+02:00
+ * @Last modified time: 2017-04-19T19:53:13+02:00
  */
 
 
@@ -16,8 +16,12 @@ var actions = require('actions')
 
 var createMockStore = configureMockStore([thunk])
 
-describe('actions', () => {
-    it('changeAppName', () => {
+describe('========== Actions ==========', () => {
+    it('EXIST', () => {
+        expect(actions).toExist()
+    })
+
+    it('Should: generate changeAppName action', () => {
         var action = {
             type: 'CHANGE_APP_NAME',
             appName: 'test'
@@ -25,7 +29,8 @@ describe('actions', () => {
         var res = actions.changeAppName(action.appName)
         expect(res).toEqual(action)
     })
-    it('changeStatus', () => {
+
+    it('Should: generate changeStatus action', () => {
         var status = 'test'
         var action = {
             type: 'CHANGE_STATUS',
@@ -34,31 +39,35 @@ describe('actions', () => {
         var res = actions.changeStatus(action.status)
         expect(res).toEqual(action)
     })
-    it('addMovie', () => {
+
+    it('Should: generate addItem action', () => {
         var action = {
-            type: 'ADD_MOVIE',
+            type: 'ADD_ITEM',
             title: 'test',
             genre: 'test'
         }
-        var res = actions.addMovie(action.title, action.genre)
+        var res = actions.addItem(action.title, action.genre)
         expect(res).toEqual(action)
     })
-    it('removeMovie', () => {
+
+    it('Should: generate removeItem action', () => {
         var action = {
-            type: 'REMOVE_MOVIE',
+            type: 'REMOVE_ITEM',
             id: 0
         }
-        var res = actions.removeMovie(action.id)
+        var res = actions.removeItem(action.id)
         expect(res).toEqual(action)
     })
-    it('startLocationFetch', () => {
+
+    it('Should: generate startLocationFetch action', () => {
         var action = {
             type: 'START_LOCATION_FETCH'
         }
         var res = actions.startLocationFetch()
         expect(res).toEqual(action)
     })
-    it('fetchLocation should return a location and dispatch completeLocationFetch & changeStatus', (done) => {
+
+    it('Should: return url & dispatch CHANGE_STATUS, START_LOCATION_FETCH, COMPLETE_LOCATION_FETCH action', (done) => {
         const store = createMockStore({})
 
         store.dispatch(actions.fetchLocation()).then(() => {
@@ -80,7 +89,8 @@ describe('actions', () => {
         }).catch(done)
 
     })
-    it('completeLocationFetch', () => {
+
+    it('Should: generate completeLocationFetch action', () => {
         var action = {
             type: 'COMPLETE_LOCATION_FETCH',
             url: 'test'
@@ -88,4 +98,5 @@ describe('actions', () => {
         var res = actions.completeLocationFetch(action.url)
         expect(res).toEqual(action)
     })
+
 })

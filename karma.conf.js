@@ -3,8 +3,8 @@
 * @Date:   2017-02-26T02:36:40+01:00
 * @Email:  me@andreeray.se
 * @Filename: karma.conf.js
-* @Last modified by:   andreeray
-* @Last modified time: 2017-02-26T02:42:51+01:00
+ * @Last modified by:   develdoe
+ * @Last modified time: 2017-04-19T16:43:36+02:00
 */
 
 var webpackConfig = require('./webpack.config.js')
@@ -14,9 +14,9 @@ module.exports = function (config) {
         browsers: ['Chrome'],
         singleRun: true,
         frameworks: ['mocha'],
-        files: ['app/tests/**/*.test.jsx'],
+        files: ['src/tests/**/*.test.jsx'],
         preprocessors: {
-            'app/tests/**/*.test.jsx': ['webpack','sourcemap']
+            'src/tests/**/*.test.jsx': ['webpack','sourcemap']
         },
         reporters: ['mocha'],
         client: {

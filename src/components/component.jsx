@@ -4,84 +4,46 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-05T22:12:40+02:00
+ * @Last modified time: 2017-04-20T00:54:31+02:00
 */
 
 
 
 var React = require('react'),
     {connect} = require('react-redux'),
-    Item = require('item'),
     actions = require('actions')
 
-var App = React.createClass({
+import List from 'list'
+
+export var App = React.createClass({
 
     componentWillMount() {
-        document.title = this.props.appName + "test"
+        document.title = this.props.appName + ": welcome"
     },
 
     render: function () {
-        var {appName, appStatus, array, map} = this.props
+        var {appName, appStatus, map} = this.props,
 
-        var renderArray = () => {
-
-            if (array.length > 0) {
-                return (
-                    <div id="array">
-                        <h2>The Array:</h2>
-                        <ul>
-                            {getArrayItems()}
-                        </ul>
-                    </div>
-                )
-            }
-        },
-        getArrayItems = () => {
-            return array.map((movie) => {
-                return (
-                    <Item key={movie.id} {...movie} />
-                )
-            })
-        },
-        renderApi = () => {
-            if (map.url){
-                return (
-                    <div id="api">
-                        <h2>The Api</h2>
-                            <p>{map.url}</p>
-                    </div>
-                )
-            }
-        },
         renderApplication = () => {
             if (appStatus === "idle") {
                 return (
                     <div>
-                        <div id="appname">
-                            <h2>{appName}</h2>
-                        </div>
-                        {renderArray()}
-                        {renderApi()}
+                        <h2>Application name: {appName}</h2>
+                        <List/>
+                        <div>Your location: {map.url}</div>
                     </div>
                 )
-            } else {
-                return (
-                    <div>
-                        <span className="blink">{appStatus}</span>
-                    </div>
-                )
-            }
+            } else { return <div className="blink">{appStatus}</div> }
         }
 
         return renderApplication()
     }
 })
-module.exports = connect(
+export default connect(
     (state) => {
         return {
             appName: state.appName,
             appStatus: state.appStatus,
-            array: state.movies,
             map: state.map
         }
     }

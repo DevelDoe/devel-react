@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-05T21:58:36+02:00
+ * @Last modified time: 2017-04-19T17:37:01+02:00
 */
 
 
@@ -28,22 +28,22 @@ export var appStatusReducer = (state = "idle", action) => {
             return state
     }
 }
-var nextMovieId = 0
-export var moviesReducer = (state = [], action) =>
+var nextItemId = 0
+export var itemsReducer = (state = [], action) =>
 {
     switch (action.type)
     {
-        case 'ADD_MOVIE':
+        case 'ADD_ITEM':
             return [
                 ...state,
                 {
-                    id: nextMovieId++,
+                    id: nextItemId++,
                     title: action.title,
                     genre: action.genre
                 }
             ]
-        case 'REMOVE_MOVIE':
-            return state.filter((movie) =>  movie.id !== action.id)
+        case 'REMOVE_ITEM':
+            return state.filter((item) =>  item.id !== action.id)
         default:
             return state
     }

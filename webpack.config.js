@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: webpack.config.js
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-05T22:07:53+02:00
+ * @Last modified time: 2017-04-19T16:41:45+02:00
 */
 
 
@@ -13,7 +13,7 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: [
-        './app/entry'
+        './src/entry'
     ],
     output: {
         path: __dirname,
@@ -23,12 +23,12 @@ module.exports = {
         root: __dirname,
         modulesDirectories: [
             'node_modules',
-            './app/components'
+            './src/components'
         ],
         alias: {
-            actions: 'app/redux/actions',
-            reducers: 'app/redux/reducers',
-            store: 'app/redux/store'
+            actions: 'src/redux/actions',
+            reducers: 'src/redux/reducers',
+            store: 'src/redux/store'
         },
         extensions: ['','.js','.jsx']
     },

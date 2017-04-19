@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-05T21:58:21+02:00
+ * @Last modified time: 2017-04-19T17:35:32+02:00
 */
 
 var axios = require('axios')
@@ -22,18 +22,18 @@ export var changeStatus = (status) => {
         status
     }
 }
-export var addMovie = (title,genre) =>
+export var addItem = (title,genre) =>
 {
     return {
-        type: 'ADD_MOVIE',
+        type: 'ADD_ITEM',
         title,
         genre
     }
 }
-export var removeMovie = (id) =>
+export var removeItem = (id) =>
 {
     return {
-        type: 'REMOVE_MOVIE',
+        type: 'REMOVE_ITEM',
         id
     }
 }
