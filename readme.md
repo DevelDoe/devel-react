@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-04-20T01:56:21+02:00
+@Last modified time: 2017-04-20T01:57:07+02:00
 -->
 
 
@@ -89,6 +89,7 @@ npm install -g supervisor
     * 0.7 Test: Item
 
 1.0 Major (Redux) branch
+
     * 1.1 Install Redux modules:
         * redux
         * react-redux
