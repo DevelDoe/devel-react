@@ -4,12 +4,12 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-04-20T12:16:53+02:00
+@Last modified time: 2017-04-20T12:17:32+02:00
 -->
 
 
 
-# DevelStrap, React & redux
+# DevelStrap, React & Redux
 
 Bootstrapping React app development.
 
