@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-04-20T02:00:42+02:00
+@Last modified time: 2017-04-20T12:15:39+02:00
 -->
 
 
@@ -54,44 +54,21 @@ npm install -g supervisor
 
 ## Release log
 
-0.0 Major (Framework) branch
-================================
-* 0.1 Install framework modules:
-    * webpack
-    * react
-    * react-dom
-    * express
-    * babel-core
-    * babel-loader
-    * babel-preset-es2015
-    * babel-preset-react
-    * babel-preset-stage-0
+### 0.0 Major (Framework) branch
+
+* 0.1 NPM : npm install --save-dev webpack react react-dom express babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-0
 * 0.2 Setup: Webpack
 * 0.3 Add: public HTML
 * 0.4 Add: Simple server
-* 0.5 Install Test suite modules:
-    * karma
-    * karma-webpack
-    * karma-mocha
-    * karma-mocha-reporter
-    * karma-chrome-launcher
-    * karma-sourcemap-loader
-    * mocha
-    * expect
-    * react-addons-test-utils
+* 0.5 NPM: npm install karma karma-webpack karma-mocha karma-mocha-reporter karma-chrome-launcher karma-sourcemap-loader mocha expect react-addons-test-utils
 * 0.6 Add: Entry
 * 0.7 Add: Component
 * 0.8 Add: List
 * 0.9 Add: Item
 
-1.0 Major (Redux) branch
-================================
-* 1.1 Install Redux modules:
-    * redux
-    * react-redux
-    * redux-thunk
-    * axios
-    * redux-mock-store
+### 1.0 Major (Redux) branch
+
+* NPM : npm install --save-dev redux react-redux redux-thunk axios redux-mock-store
 * 1.2 Add: Store
 * 1.3 Add: Actions
 * 1.4 Add: Reducers
