@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-04-20T12:15:39+02:00
+@Last modified time: 2017-04-20T12:16:53+02:00
 -->
 
 
@@ -68,7 +68,7 @@ npm install -g supervisor
 
 ### 1.0 Major (Redux) branch
 
-* NPM : npm install --save-dev redux react-redux redux-thunk axios redux-mock-store
+* 1.1 NPM : npm install --save-dev redux react-redux redux-thunk axios redux-mock-store
 * 1.2 Add: Store
 * 1.3 Add: Actions
 * 1.4 Add: Reducers
