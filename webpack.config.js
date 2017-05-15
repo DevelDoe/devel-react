@@ -4,16 +4,39 @@
 * @Email:  me@andreeray.se
 * @Filename: webpack.config.js
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-19T16:41:45+02:00
+ * @Last modified time: 2017-04-26T11:34:26+02:00
 */
 
 
 
 var webpack = require('webpack')
+var path    = require('path')
+var envFile = require('node-env-file')
+
+/**
+ * To optimize for production run: NODE_ENV=production webpack -p
+ */
+process.env.NODE_ENV = process.env.NODE_ENV || 'development'
+
+try {
+    envFile(path.join(__dirname, 'config/' + process.env.NODE_ENV + '.env'))
+} catch (e) { }
 
 module.exports = {
     entry: [
         './src/entry'
+    ],
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compressor: {
+                warnings: false
+            }
+        }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+            }
+        })
     ],
     output: {
         path: __dirname,
@@ -44,5 +67,5 @@ module.exports = {
             }
         ]
     },
-    devtool: 'cheep-module-eval-source-map'
+    devtool: process.env.NODE_ENV === 'production' ? undefined : 'cheep-module-eval-source-map'
 }

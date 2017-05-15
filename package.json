@@ -4,12 +4,13 @@
   "description": "Bootstrapping React app development.",
   "main": "entry.jsx",
   "scripts": {
-    "test": "karma start",
-    "start": "supervisor server.js"
+    "test": "NODE_ENV=test karma start",
+    "build": "webpack -p",
+    "start": "npm run build && node server.js"
   },
   "author": "Andree DevelDoe Ray <me@andreeray.se> (http://andreeray.se)",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "axios": "^0.15.3",
     "babel-core": "^6.5.1",
     "babel-loader": "^6.2.2",
@@ -19,13 +20,7 @@
     "deep-freeze-strict": "^1.1.1",
     "expect": "^1.14.0",
     "express": "^4.14.1",
-    "karma": "^0.13.22",
-    "karma-chrome-launcher": "^0.2.2",
-    "karma-mocha": "^0.2.2",
-    "karma-mocha-reporter": "^2.0.0",
-    "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^1.7.0",
-    "mocha": "^2.4.5",
+    "node-env-file": "^0.1.8",
     "react": "^0.14.7",
     "react-addons-test-utils": "^0.14.6",
     "react-dom": "^0.14.7",
@@ -34,5 +29,14 @@
     "redux-mock-store": "^1.0.3",
     "redux-thunk": "^2.2.0",
     "webpack": "^1.12.13"
+  },
+  "devDependencies": {
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-mocha": "^0.2.2",
+    "karma-mocha-reporter": "^2.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5"
   }
 }

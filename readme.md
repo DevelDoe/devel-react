@@ -4,7 +4,7 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-04-20T12:17:32+02:00
+@Last modified time: 2017-04-26T11:43:59+02:00
 -->
 
 
@@ -33,42 +33,45 @@ There is tree different types of state cases included to get you started.
 * An array
 * api call
 
-## Serving
+## Install
 
-You will need to have Supervisor installed globally in order to use `npm start`
-
-```bash
-npm install -g supervisor
-```
-
-
-## Building & Testing
+Clone this repository
 
 `npm install` to initialy install your npm modules
 
+### development
+
 `webpack` to bundle your files, use `webpack -w` to autogenerate the bundle on the fly.
 
-`npm test` to run your test suit.
+`node server.js` to run your server
 
-`npm start` to start your server.
+### production
+
+`npm start` to build, compress & start your server.
+
+### Test suite
+
+`npm test` to run your test suit.
 
 ## Release log
 
 ### 0.0 Major (Framework) branch
 
-* 0.1 NPM : npm install --save-dev webpack react react-dom express babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-0
+* 0.1 NPM : npm i --save-dev webpack react react-dom express babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-0
 * 0.2 Setup: Webpack
 * 0.3 Add: public HTML
 * 0.4 Add: Simple server
-* 0.5 NPM: npm install karma karma-webpack karma-mocha karma-mocha-reporter karma-chrome-launcher karma-sourcemap-loader mocha expect react-addons-test-utils
+* 0.5 NPM: npm i karma karma-webpack karma-mocha karma-mocha-reporter karma-chrome-launcher karma-sourcemap-loader mocha expect react-addons-test-utils
 * 0.6 Add: Entry
 * 0.7 Add: Component
 * 0.8 Add: List
 * 0.9 Add: Item
+* 0.10 Setup: Environments
+* 0.11 Update: webpack.config, package.json & readme.md
 
 ### 1.0 Major (Redux) branch
 
-* 1.1 NPM : npm install --save-dev redux react-redux redux-thunk axios redux-mock-store
+* 1.1 NPM : npm i --save-dev redux react-redux redux-thunk axios redux-mock-store
 * 1.2 Add: Store
 * 1.3 Add: Actions
 * 1.4 Add: Reducers
