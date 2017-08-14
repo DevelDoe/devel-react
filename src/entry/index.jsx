@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-08-14T15:01:06+02:00
+ * @Last modified time: 2017-08-14T15:11:38+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -20,7 +20,7 @@ var actions                 = require('actions')
 import router             from 'src/router'
 
 store.dispatch(actions.changeStatus('Scripting'))
-
+console.log(process.env.TEST)
 // SETUP -----------------------------------------------------
 
 var appName = "DevelStrap"
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 3.5
  * @Last modified by    : develdoe
- * @Last modified time: 2017-08-14T15:01:06+02:00
+ * @Last modified time: 2017-08-14T15:11:38+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -114,7 +114,10 @@ JavaScript ninja @ Devel Devils.
   * Add: components/api
   * Update: components/component to components/data
   * Update: layout/default
-* 0.2.7 Added environments
+* 0.2.7. Added environments
+  * Update: webpack.config.js
+  * Update: package.json
+  * Add: environments/development.env
 
 %cBACKLOG#####################################
 

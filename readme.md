@@ -113,4 +113,7 @@ Clone this repository
   * Add: components/api
   * Update: components/component to components/data
   * Update: layout/default
-* 0.2.7 Added environments
+* 0.2.7. Added environments
+  * Update: webpack.config.js
+  * Update: package.json 
+  * Add: environments/development.env

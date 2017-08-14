@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: webpack.config.js
  * @Last modified by:   develdoe
- * @Last modified time: 2017-08-14T14:44:06+02:00
+ * @Last modified time: 2017-08-14T15:06:26+02:00
 */
 
 
@@ -18,9 +18,8 @@ var envFile = require('node-env-file')
  */
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
-try {
-    envFile(path.join(__dirname, 'config/' + process.env.NODE_ENV + '.env'))
-} catch (e) { }
+try { envFile(path.join(__dirname, 'environments/' + process.env.NODE_ENV + '.env')) }
+catch (e) { console.log("enfFile error:",e) }
 
 console.log("========== ENVIRONMENT CONFIGURATION =================")
 console.log("Environment:",process.env.NODE_ENV)
@@ -38,7 +37,8 @@ module.exports = {
         }),
         new webpack.DefinePlugin({
             'process.env': {
-                NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+                NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+                TEST: JSON.stringify(process.env.TEST)
             }
         })
     ],
