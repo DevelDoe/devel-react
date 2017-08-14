@@ -4,33 +4,39 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-20T00:54:31+02:00
+ * @Last modified time: 2017-08-14T14:35:50+02:00
 */
 
 
 
-var React = require('react'),
-    {connect} = require('react-redux'),
-    actions = require('actions')
+import React      from 'react'
+import * as Redux from 'react-redux'
+import * as actions from 'actions'
 
-import List from 'list'
+import List       from 'data/list'
+
+
 
 export var App = React.createClass({
 
     componentWillMount() {
+        var {dispatch} = this.props
         document.title = this.props.appName + ": welcome"
+        dispatch(actions.addItem('item 1','test'))
+        dispatch(actions.addItem('item 2','test'))
+        dispatch(actions.addItem('item 3','test'))
+        dispatch(actions.removeItem(2))
+        dispatch(actions.changeStatus('idle'))
     },
 
     render: function () {
-        var {appName, appStatus, map} = this.props,
+        var {appStatus} = this.props,
 
         renderApplication = () => {
             if (appStatus === "idle") {
                 return (
                     <div>
-                        <h2>Application name: {appName}</h2>
                         <List/>
-                        <div>Your location: {map.url}</div>
                     </div>
                 )
             } else { return <div className="blink">{appStatus}</div> }
@@ -39,12 +45,11 @@ export var App = React.createClass({
         return renderApplication()
     }
 })
-export default connect(
+export default Redux.connect(
     (state) => {
         return {
             appName: state.appName,
             appStatus: state.appStatus,
-            map: state.map
         }
     }
 )(App)

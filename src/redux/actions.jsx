@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-19T17:35:32+02:00
+ * @Last modified time: 2017-08-14T14:10:41+02:00
 */
 
 var axios = require('axios')
@@ -37,18 +37,11 @@ export var removeItem = (id) =>
         id
     }
 }
-export var startLocationFetch = () =>
-{
-    return {
-        type: 'START_LOCATION_FETCH'
-    }
-}
 export var fetchLocation = () =>
 {
     return (dispatch, getState) =>
     {
         dispatch(changeStatus("Fetching"))
-        dispatch(startLocationFetch())
         return axios.get('http://ipinfo.io').then(function (res) {
             var loc = res.data.loc
             var baseUrl = 'http://maps.google.com?q='

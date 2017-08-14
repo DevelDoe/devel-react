@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-19T17:37:01+02:00
+ * @Last modified time: 2017-08-14T14:11:14+02:00
 */
 
 
@@ -48,18 +48,16 @@ export var itemsReducer = (state = [], action) =>
             return state
     }
 }
-export var mapReducer = (state = {isFetching: false, url: undefined}, action) =>
+export var mapReducer = (state = {url: undefined}, action) =>
 {
     switch (action.type)
     {
         case 'START_LOCATION_FETCH':
             return {
-                isFetching: true,
                 url: undefined
             }
         case 'COMPLETE_LOCATION_FETCH':
             return {
-                isFetching: false,
                 url: action.url
             }
         default:

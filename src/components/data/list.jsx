@@ -4,7 +4,7 @@
  * @Email:  me@andreeray.se
  * @Filename: list.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-20T01:21:54+02:00
+ * @Last modified time: 2017-08-14T14:35:54+02:00
  */
 
 
@@ -12,7 +12,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import Item from 'item'
+import Item from 'data/item'
 
 export var List = React.createClass({
     render() {

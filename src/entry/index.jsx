@@ -4,36 +4,37 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-04-20T02:00:55+02:00
+ * @Last modified time: 2017-08-14T14:58:20+02:00
 */
 
+// IMPORTS ---------------------------------------------------
 
-var React = require('react'),
-    ReactDOM = require('react-dom'),
-    {Provider} = require('react-redux')
+import React, {Component} from 'react'
+import ReactDOM           from 'react-dom'
+import {Provider}         from 'react-redux'
+import {hashHistory}      from 'react-router'
 
-import Component from 'component'
+var store                   = require('store').configureStore()
+var actions                 = require('actions')
 
-var store = require('store').configureStore(),
-    actions = require('actions')
+import router             from 'src/router'
 
 store.dispatch(actions.changeStatus('Scripting'))
+
+// SETUP -----------------------------------------------------
 
 var appName = "DevelStrap"
 document.title = appName
 store.dispatch(actions.changeAppName(appName))
 
+// RENDER ----------------------------------------------------
 
-
-store.dispatch(actions.addItem('item 1','test'))
-store.dispatch(actions.addItem('item 2','test'))
-store.dispatch(actions.addItem('item 3','test'))
-store.dispatch(actions.removeItem(2))
-
-store.dispatch(actions.fetchLocation())
-
-
-ReactDOM.render(<Provider store={store}><Component/></Provider>, document.getElementById('app'))
+ReactDOM.render(
+  <Provider store={store}>
+    {router}
+  </Provider>,
+  document.getElementById('app')
+)
 
 console.log(`
 %cMETA########################################
@@ -41,9 +42,9 @@ console.log(`
  * @Date                : 2017-02-18T23:58:38+01:00
  * @Email               : me@andreeray.se
  * @Site                : andreeray.se
- * @Patch               : 0.
+ * @Version             : 3.5
  * @Last modified by    : develdoe
- * @Last modified time: 2017-04-20T02:00:55+02:00
+ * @Last modified time: 2017-08-14T14:58:20+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -57,7 +58,7 @@ JavaScript ninja @ Devel Devils.
 
 0.0 Major (Framework) branch
 ================================
-* 0.1 Install framework modules:
+* 0.0.1 Install framework modules:
     * webpack
     * react
     * react-dom
@@ -85,24 +86,38 @@ JavaScript ninja @ Devel Devils.
 * 0.8 Add: List
 * 0.9 Add: Item
 
-1.0 Major (Redux) branch
+0.1 Minor (Redux) branch
 ================================
-* 1.1 Install Redux modules:
+* 0.1.1 Install Redux modules:
     * redux
     * react-redux
     * redux-thunk
     * axios
     * redux-mock-store
-* 1.2 Add: Store
-* 1.3 Add: Actions
-* 1.4 Add: Reducers
-* 1.5 Update: component
+* 0.1.2 Add: Store
+* 0.1.3 Add: Actions
+* 0.1.4 Add: Reducers
+* 0.1.5 Update: component
 
-##############################################
+0.2.0 Minor (Router) branch
+================================
+* 0.2.1 Refactor to ES2016 syntax
+* 0.2.2 Install Router modules:
+  * react-router
+* 0.2.3 Add: src/router/index
+* 0.2.4 Add: src/router/routing
+* 0.2.5 Update: src/entry
+* 0.2.6 Refactoring:
+  * Remove: src/router/routing
+  * Add: src/layout
+  * Update: src/router/index
+  * Add: components/api
+  * Update: components/component to components/data
+  * Update: layout/default
+* 0.2.7 Added environments
 
 %cBACKLOG#####################################
 
-##############################################
 
 %cDEBUGG######################################
 `,
