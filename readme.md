@@ -55,24 +55,62 @@ Clone this repository
 
 ## Release log
 
-### 0.0 Major (Framework) branch
-
-* 0.1 NPM : npm i --save-dev webpack react react-dom express babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-0
+0.0 Major (Framework) branch
+================================
+* 0.0.1 Install framework modules:
+    * webpack
+    * react
+    * react-dom
+    * express
+    * babel-core
+    * babel-loader
+    * babel-preset-es2015
+    * babel-preset-react
+    * babel-preset-stage-0
 * 0.2 Setup: Webpack
 * 0.3 Add: public HTML
 * 0.4 Add: Simple server
-* 0.5 NPM: npm i karma karma-webpack karma-mocha karma-mocha-reporter karma-chrome-launcher karma-sourcemap-loader mocha expect react-addons-test-utils
+* 0.5 Install Test suite modules:
+    * karma
+    * karma-webpack
+    * karma-mocha
+    * karma-mocha-reporter
+    * karma-chrome-launcher
+    * karma-sourcemap-loader
+    * mocha
+    * expect
+    * react-addons-test-utils
 * 0.6 Add: Entry
 * 0.7 Add: Component
 * 0.8 Add: List
 * 0.9 Add: Item
-* 0.10 Setup: Environments
-* 0.11 Update: webpack.config, package.json & readme.md
 
-### 1.0 Major (Redux) branch
+0.1 Minor (Redux) branch
+================================
+* 0.1.1 Install Redux modules:
+    * redux
+    * react-redux
+    * redux-thunk
+    * axios
+    * redux-mock-store
+* 0.1.2 Add: Store
+* 0.1.3 Add: Actions
+* 0.1.4 Add: Reducers
+* 0.1.5 Update: component
 
-* 1.1 NPM : npm i --save-dev redux react-redux redux-thunk axios redux-mock-store
-* 1.2 Add: Store
-* 1.3 Add: Actions
-* 1.4 Add: Reducers
-* 1.5 Update: component
+0.2.0 Minor (Router) branch
+================================
+* 0.2.1 Refactor to ES2016 syntax
+* 0.2.2 Install Router modules:
+  * react-router
+* 0.2.3 Add: src/router/index
+* 0.2.4 Add: src/router/routing
+* 0.2.5 Update: src/entry
+* 0.2.6 Refactoring:
+  * Remove: src/router/routing
+  * Add: src/layout
+  * Update: src/router/index
+  * Add: components/api
+  * Update: components/component to components/data
+  * Update: layout/default
+* 0.2.7 Added environments
