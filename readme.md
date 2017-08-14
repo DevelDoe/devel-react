@@ -67,10 +67,10 @@ Clone this repository
     * babel-preset-es2015
     * babel-preset-react
     * babel-preset-stage-0
-* 0.2 Setup: Webpack
-* 0.3 Add: public HTML
-* 0.4 Add: Simple server
-* 0.5 Install Test suite modules:
+* 0.0.2 Setup: Webpack
+* 0.0.3 Add: public HTML
+* 0.0.4 Add: Simple server
+* 0.0.5 Install Test suite modules:
     * karma
     * karma-webpack
     * karma-mocha
@@ -80,10 +80,10 @@ Clone this repository
     * mocha
     * expect
     * react-addons-test-utils
-* 0.6 Add: Entry
-* 0.7 Add: Component
-* 0.8 Add: List
-* 0.9 Add: Item
+* 0.0.6 Add: Entry
+* 0.0.7 Add: Component
+* 0.0.8 Add: List
+* 0.0.9 Add: Item
 
 0.1 Minor (Redux) branch
 ================================

@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   develdoe
- * @Last modified time: 2017-08-14T14:58:20+02:00
+ * @Last modified time: 2017-08-14T15:01:06+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 3.5
  * @Last modified by    : develdoe
- * @Last modified time: 2017-08-14T14:58:20+02:00
+ * @Last modified time: 2017-08-14T15:01:06+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -68,10 +68,10 @@ JavaScript ninja @ Devel Devils.
     * babel-preset-es2015
     * babel-preset-react
     * babel-preset-stage-0
-* 0.2 Setup: Webpack
-* 0.3 Add: public HTML
-* 0.4 Add: Simple server
-* 0.5 Install Test suite modules:
+* 0.0.2 Setup: Webpack
+* 0.0.3 Add: public HTML
+* 0.0.4 Add: Simple server
+* 0.0.5 Install Test suite modules:
     * karma
     * karma-webpack
     * karma-mocha
@@ -81,10 +81,10 @@ JavaScript ninja @ Devel Devils.
     * mocha
     * expect
     * react-addons-test-utils
-* 0.6 Add: Entry
-* 0.7 Add: Component
-* 0.8 Add: List
-* 0.9 Add: Item
+* 0.0.6 Add: Entry
+* 0.0.7 Add: Component
+* 0.0.8 Add: List
+* 0.0.9 Add: Item
 
 0.1 Minor (Redux) branch
 ================================
