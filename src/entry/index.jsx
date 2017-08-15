@@ -3,8 +3,8 @@
 * @Date:   2017-03-13T13:54:41+01:00
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
- * @Last modified by:   develdoe
- * @Last modified time: 2017-08-14T15:11:38+02:00
+ * @Last modified by:   andreeray
+ * @Last modified time: 2017-08-15T19:50:55+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 3.5
  * @Last modified by    : develdoe
- * @Last modified time: 2017-08-14T15:11:38+02:00
+ * @Last modified time: 2017-08-15T19:50:55+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -57,6 +57,9 @@ JavaScript ninja @ Devel Devils.
 %cRELEASELOG#####################################
 
 0.0 Major (Framework) branch
+---------------------------------
+This bransh adds the basic React skelleton
+and adds a test suit.
 ================================
 * 0.0.1 Install framework modules:
     * webpack
@@ -87,6 +90,9 @@ JavaScript ninja @ Devel Devils.
 * 0.0.9 Add: Item
 
 0.1 Minor (Redux) branch
+---------------------------------
+This bransh adds Redux to the project for
+eazy handling of application wide data.
 ================================
 * 0.1.1 Install Redux modules:
     * redux
@@ -100,6 +106,9 @@ JavaScript ninja @ Devel Devils.
 * 0.1.5 Update: component
 
 0.2.0 Minor (Router) branch
+---------------------------------
+This bransh adds React Router for
+navigation the application.
 ================================
 * 0.2.1 Refactor to ES2016 syntax
 * 0.2.2 Install Router modules:
@@ -118,6 +127,17 @@ JavaScript ninja @ Devel Devils.
   * Update: webpack.config.js
   * Update: package.json
   * Add: environments/development.env
+
+0.3.0 Minor (Layout) branch
+---------------------------------
+This bransh adds styling to make developing layouts eazy
+with cool background and transparents divs.
+=================================
+* 0.3.1 Update: ./public/index.html
+* 0.3.2 Update: ./src/components/data/item
+* 0.3.3 Update: ./src/layout/default.jsx
+
+v 1.0 Release
 
 %cBACKLOG#####################################
 

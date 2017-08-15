@@ -56,7 +56,10 @@ Clone this repository
 ## Release log
 
 0.0 Major (Framework) branch
-================================
+---------------------------------
+This bransh adds the basic React skelleton
+and adds a test suit.
+---------------------------------
 * 0.0.1 Install framework modules:
     * webpack
     * react
@@ -86,6 +89,9 @@ Clone this repository
 * 0.0.9 Add: Item
 
 0.1 Minor (Redux) branch
+---------------------------------
+This bransh adds Redux to the project for
+eazy handling of application wide data.
 ================================
 * 0.1.1 Install Redux modules:
     * redux
@@ -99,6 +105,9 @@ Clone this repository
 * 0.1.5 Update: component
 
 0.2.0 Minor (Router) branch
+---------------------------------
+This bransh adds React Router for
+navigation the application.
 ================================
 * 0.2.1 Refactor to ES2016 syntax
 * 0.2.2 Install Router modules:
@@ -115,5 +124,16 @@ Clone this repository
   * Update: layout/default
 * 0.2.7. Added environments
   * Update: webpack.config.js
-  * Update: package.json 
+  * Update: package.json
   * Add: environments/development.env
+
+0.3.0 Minor (Layout) branch
+---------------------------------
+This bransh adds styling to make developing layouts eazy
+with cool background and transparents divs.
+=================================
+* 0.3.1 Update: ./public/index.html
+* 0.3.2 Update: ./src/components/data/item
+* 0.3.3 Update: ./src/layout/default.jsx
+
+v 1.0 Release
