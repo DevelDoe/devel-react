@@ -137,4 +137,5 @@ with cool background and transparents divs.*
 be used to quickly deploy professional React web applications.*
 
 ## Whats next?
-I would start by adding somekind of backend/database and authentication.
+I would start by adding backend/database and authentication of
+preference. 
