@@ -125,7 +125,7 @@ navigation the application.*
   * Add: environments/development.env
 
 ### 0.3.0 Minor (Layout) branch
-*This bransh adds styling to make developing layouts eazy
+*This branch adds styling to make developing layouts eazy
 with cool background and transparents divs.*
 
 * 0.3.1 Update: ./public/index.html
@@ -135,3 +135,6 @@ with cool background and transparents divs.*
 ### v 1.0 Release
 *This Concludes version 1 of the project, the project can now
 be used to quickly deploy professional React web applications.*
+
+## Whats next?
+I would start by adding somekind of backend/database and authentication.
