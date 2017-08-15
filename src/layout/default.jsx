@@ -3,8 +3,8 @@
  * @Date:   2017-08-14T13:12:52+02:00
  * @Email:  andreeray@live.com
  * @Filename: default.jsx
- * @Last modified by:   develdoe
- * @Last modified time: 2017-08-14T14:34:36+02:00
+ * @Last modified by:   andreeray
+ * @Last modified time: 2017-08-15T18:33:27+02:00
  */
 
 import React from 'react'
@@ -14,18 +14,20 @@ import { Link } from 'react-router'
 export var defaultLayout = ({ children, location, appName }) => {
     return (
       <div className="primary-layout">
-        <header><h1>{appName}</h1></header>
+          <div><header><h1 style={{textAlign:'center', width: '100%'}}>{appName}</h1></header></div>
 
-        <aside className="primary-aside">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/api">api</Link></li>
-          </ul>
-        </aside>
+        <div className="group">
+            <aside className="primary-aside">
+              <ul>
+                <li><div><Link to="/">HOME</Link></div></li>
+                <li><div><Link to="/api">API</Link></div></li>
+              </ul>
+            </aside>
+        </div>
 
-        <main>
+        <div>
           {children}
-        </main>
+        </div>
       </div>
     )
 }

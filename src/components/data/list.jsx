@@ -3,8 +3,8 @@
  * @Date:   2017-04-19T23:55:45+02:00
  * @Email:  me@andreeray.se
  * @Filename: list.jsx
- * @Last modified by:   develdoe
- * @Last modified time: 2017-08-14T14:35:54+02:00
+ * @Last modified by:   andreeray
+ * @Last modified time: 2017-08-15T18:35:15+02:00
  */
 
 
@@ -21,7 +21,7 @@ export var List = React.createClass({
 
             renderItems = () => {
                 if (items.length === 0) return <p className="contain__message">Nothing to do</p>
-                return items.map((item, index) => { return <Item key={index} {...item} /> })
+                return items.map((item, index) => { return <div className="group"><Item key={index} {...item} /> </div>})
             }
 
         return <div>{renderItems()}</div>
