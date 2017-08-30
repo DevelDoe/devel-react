@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-08-15T19:50:55+02:00
+ * @Last modified time: 2017-08-15T20:12:11+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 3.5
  * @Last modified by    : develdoe
- * @Last modified time: 2017-08-15T19:50:55+02:00
+ * @Last modified time: 2017-08-15T20:12:11+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -60,7 +60,7 @@ JavaScript ninja @ Devel Devils.
 ---------------------------------
 This bransh adds the basic React skelleton
 and adds a test suit.
-================================
+
 * 0.0.1 Install framework modules:
     * webpack
     * react
@@ -93,7 +93,7 @@ and adds a test suit.
 ---------------------------------
 This bransh adds Redux to the project for
 eazy handling of application wide data.
-================================
+
 * 0.1.1 Install Redux modules:
     * redux
     * react-redux
@@ -109,7 +109,7 @@ eazy handling of application wide data.
 ---------------------------------
 This bransh adds React Router for
 navigation the application.
-================================
+
 * 0.2.1 Refactor to ES2016 syntax
 * 0.2.2 Install Router modules:
   * react-router
@@ -132,12 +132,23 @@ navigation the application.
 ---------------------------------
 This bransh adds styling to make developing layouts eazy
 with cool background and transparents divs.
-=================================
+
 * 0.3.1 Update: ./public/index.html
 * 0.3.2 Update: ./src/components/data/item
 * 0.3.3 Update: ./src/layout/default.jsx
 
+
 v 1.0 Release
+---------------------------------
+*This Concludes version 1 of the project, the project can now
+be used to quickly deploy professional React web applications.*
+
+
+## Whats next?
+---------------------------------
+I would start by adding backend/database and authentication of
+preference.
+
 
 %cBACKLOG#####################################
 
