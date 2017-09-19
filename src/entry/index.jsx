@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T14:34:23+02:00
+ * @Last modified time: 2017-09-19T16:31:24+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 3.5
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T14:34:23+02:00
+ * @Last modified time: 2017-09-19T16:31:24+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -58,7 +58,8 @@ my React applications.
 
 %cRELEASELOG#####################################
 
-%cv 0.0 Major (Framework) branch
+%c
+0.0 Major - The basic React skelleton
 ---------------------------------
 This bransh adds the basic React skelleton
 and adds a test suit.
@@ -91,7 +92,7 @@ and adds a test suit.
 * 0.0.8 Add: List
 * 0.0.9 Add: Item
 
-%cv 0.1 Minor (Redux) branch
+0.1 Minor - Implement Redux
 ---------------------------------
 This bransh adds Redux to the project for
 eazy handling of application wide data.
@@ -107,7 +108,7 @@ eazy handling of application wide data.
 * 0.1.4 Add: Reducers
 * 0.1.5 Update: component
 
-%cv 0.2.0 Minor (Router) branch
+0.2.0 Minor - Implement React Router
 ---------------------------------
 This bransh adds React Router for
 navigation the application.
@@ -130,25 +131,45 @@ navigation the application.
   * Update: package.json
   * Add: environments/development.env
 
-%cv 0.3.0 Minor (Layout) branch
+0.3.0 Minor - Front end styling for eazy layout creation
 ---------------------------------
-This bransh adds styling to make developing layouts eazy
-with cool background and transparents divs.
+This branch adds styling to make developing layouts eazy
+with blueprint background and semitransparents divs.
 
 * 0.3.1 Update: ./public/index.html
 * 0.3.2 Update: ./src/components/data/item
 * 0.3.3 Update: ./src/layout/default.jsx
 
 
-%cv 1.0 Release
+%c
+1.0 Release
 ---------------------------------
 This Concludes version 1 of the project, the project can now
 be used to quickly deploy professional React web applications.*
 
+=================================
 
-%cv 2.0 Firebase Bransh
+%c
+v 2.0 Firebase Bransh
 ---------------------------------
-Setting upp a firebase crud solution.
+A firebase crud solution.
+
+2.1.0 Minor - Creating our Firebase Database
+---------------------------------
+We'll need to create an account and database on Firebase so that
+we can link up our application to it.
+
+* 2.1.1 Create an account on Firebase
+* 2.1.2 Create a new project
+
+2.2.0 Minor - Hooking up our App to Firebase
+---------------------------------
+Next we install, import, configure, and initialize our app.
+
+* 2.2.1 Install firebase modules:
+  * firebase
+* 2.2.2 Add: ./src/firebase/index.js
+* 2.2.3 temporarily disable authentication requirements at firebase
 
 
 %cBACKLOG#####################################
@@ -167,12 +188,9 @@ Setting upp a firebase crud solution.
 `,
 'color: #FFFFFF',
 'color: #fc8daa',
-'color: #0000ff',
+'color: #3232ff',
 'color: #e5e5ff',
-'color: #ccccff',
+'color: #3232ff',
 'color: #b2b2ff',
-'color: #9999ff',
-'color: #FF0000',
-'color: #7f7fff',
 'color: #FFFF00',
 'color: #ccc')
