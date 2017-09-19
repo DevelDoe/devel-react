@@ -3,8 +3,8 @@
  * @Date:   2017-04-19T16:36:24+02:00
  * @Email:  me@andreeray.se
  * @Filename: component.test.jsx
- * @Last modified by:   develdoe
- * @Last modified time: 2017-04-20T01:37:42+02:00
+ * @Last modified by:   andreeray
+ * @Last modified time: 2017-09-19T19:25:40+02:00
  */
 
 
@@ -16,8 +16,8 @@ import Expect from 'expect'
 
 
 import {configureStore} from 'store'
-import ConnectedList, {List} from 'list'
-import ConnectedItem, {Item} from 'item'
+import ConnectedList, {List} from 'data/list'
+import ConnectedItem, {Item} from 'data/item'
 
 describe('========== List ==========', () => {
 

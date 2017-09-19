@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-08-15T18:34:48+02:00
+ * @Last modified time: 2017-09-19T21:24:34+02:00
 */
 
 
@@ -22,9 +22,6 @@ export var App = React.createClass({
     componentWillMount() {
         var {dispatch} = this.props
         document.title = this.props.appName + ": welcome"
-        dispatch(actions.addItem('item 1','test'))
-        dispatch(actions.addItem('item 2','test'))
-        dispatch(actions.addItem('item 3','test'))
         dispatch(actions.removeItem(2))
         dispatch(actions.changeStatus('idle'))
     },

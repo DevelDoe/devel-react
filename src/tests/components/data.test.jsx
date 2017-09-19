@@ -3,8 +3,8 @@
  * @Date:   2017-04-20T01:34:41+02:00
  * @Email:  me@andreeray.se
  * @Filename: component.test.jsx
- * @Last modified by:   develdoe
- * @Last modified time: 2017-04-20T01:51:44+02:00
+ * @Last modified by:   andreeray
+ * @Last modified time: 2017-09-19T19:25:17+02:00
  */
 
 
@@ -15,8 +15,8 @@ import {Provider} from 'react-redux'
 import TestUtils from 'react-addons-test-utils'
 import Expect from 'expect'
 import {configureStore} from 'store'
-import Component from 'component'
-import List from 'list'
+import Component from 'data'
+import List from 'data/list'
 
 describe('========== Component ==========', () => {
     it('EXIST', () => {

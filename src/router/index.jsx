@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T17:23:24+02:00
+ * @Last modified time: 2017-09-19T20:46:47+02:00
  */
 
 import React from 'react'
@@ -13,7 +13,7 @@ import {Route, Router, IndexRoute, hashHistory} from 'react-router'
 import AppLayout from 'default'
 import Component from 'data'
 import Api       from 'api'
-import Fire  from 'fire'
+import Input      from 'input'
 
 const Test = () => <div>Users Page</div>
 
@@ -22,7 +22,7 @@ export default (
     <Route path="/" component={AppLayout}>
       <IndexRoute component={Component} />
       <Route path="/api" component={Api} />
-      <Route path="/fire" component={Fire} />
+      <Route path="/input" component={Input} />
     </Route>
   </Router>
 )

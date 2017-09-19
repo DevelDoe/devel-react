@@ -9,7 +9,7 @@
 
 
 
-# DevelStrap, React & Redux
+# DevelStrap, React/Redux/ReactRouter/Firebase
 
 Bootstrapping React app development.
 
@@ -160,17 +160,24 @@ we can link up our application to it.*
 ### 2.3.0 Building out our App's Rough Skeleton
 *A simple form with two inputs.*
 
-* 2.3.1 Add: ./src/components/fire/index.jsx
+* 2.3.1 Add: ./src/components/input/index.jsx
 
 ### 2.4.0 Add styling
 *Let's make it look cool.*
 
-2.4.1 Update ./public/index.html
+* 2.4.1 Update ./public/index.html
+
+### 2.5.0 Connecting our Form to Redux
+*Connect our inputs to Redux state. This will force
+a complete re-write and refactoring of our Redux
+implementation.*
+
+* 2.5.1 refactor ./src/components/input/index.jsx to use redux
+
 
 ## BACKLOG
-
-### 2.5.0 Connecting our Form to Component State
 ### 2.6.0 Adding a new Item to your Database
 ### 2.7.0 Retrieving our Items from the database
 ### 2.8.0 Displaying Items on the Page
 ### 2.9.0 Removing Items from the Page
+### 2.10.0 Refactor, change name of the component to input, etc
