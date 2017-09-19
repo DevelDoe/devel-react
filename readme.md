@@ -155,8 +155,8 @@ Please checkout branches of this repo for more functionality.*
 
 
 ## BACKLOG
-1.1.9 Adding a new Item to your Database
-1.1.10 Retrieving our Items from the database
-1.1.11 Displaying Items on the Page
-1.1.12 Removing Items from the Page
-1.1.13 Refactor, change name of the component to input, etc
+* 1.1.9 Adding a new Item to your Database
+* 1.1.10 Retrieving our Items from the database
+* 1.1.11 Displaying Items on the Page
+* 1.1.12 Removing Items from the Page
+* 1.1.13 Refactor, change name of the component to input, etc
