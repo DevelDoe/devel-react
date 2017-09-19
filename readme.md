@@ -55,7 +55,7 @@ Clone this repository
 
 ## Release log
 
-### 0.0 Major (Framework) branch
+### 0.0 The basic React skelleton
 *This bransh adds the basic React skelleton
 and adds a test suit.*
 
@@ -87,7 +87,7 @@ and adds a test suit.*
 * 0.0.8 Add: List
 * 0.0.9 Add: Item
 
-### 0.1 Minor (Redux) branch
+### 0.1 Implement Redux
 *This bransh adds Redux to the project for
 eazy handling of application wide data.*
 
@@ -102,7 +102,7 @@ eazy handling of application wide data.*
 * 0.1.4 Add: Reducers
 * 0.1.5 Update: component
 
-### 0.2.0 Minor (Router) branch
+### 0.2 Implement React Router
 *This bransh adds React Router for
 navigation the application.*
 
@@ -124,18 +124,20 @@ navigation the application.*
   * Update: package.json
   * Add: environments/development.env
 
-### 0.3.0 Minor (Layout) branch
+### 0.3.0 Front end styling for eazy layout creation
 *This branch adds styling to make developing layouts eazy
-with cool background and transparents divs.*
+with blueprint background and semitransparents divs.*
 
 * 0.3.1 Update: ./public/index.html
 * 0.3.2 Update: ./src/components/data/item
 * 0.3.3 Update: ./src/layout/default.jsx
 
-### v 1.0 Release
+## v 1.0 Release
 *This Concludes version 1 of the project, the project can now
 be used to quickly deploy professional React web applications.*
 
+---
+
 ## Whats next?
 I would start by adding backend/database and authentication of
-preference. 
+preference.
