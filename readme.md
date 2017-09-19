@@ -57,7 +57,7 @@ Clone this repository
 ## Release log
 
 ### 0.0 The basic React skeleton
-*This bransh adds the basic React skelleton
+*This major release adds the basic React skelleton
 and adds a test suit.*
 
 * 0.0.1 Install framework modules:
@@ -89,7 +89,7 @@ and adds a test suit.*
 * 0.0.9 Add: Item
 
 ### 0.1 Implement Redux
-*This bransh adds Redux to the project for
+*This minor update adds Redux to the project for
 eazy handling of application wide data.*
 
 * 0.1.1 Install Redux modules:
@@ -104,7 +104,7 @@ eazy handling of application wide data.*
 * 0.1.5 Update: component
 
 ### 0.2 Implement React Router
-*This bransh adds React Router for
+*This minor update adds React Router for
 navigation the application.*
 
 * 0.2.1 Refactor to ES2016 syntax
@@ -126,31 +126,32 @@ navigation the application.*
   * Add: environments/development.env
 
 ### 0.3.0 Front end styling for eazy layout creation
-*This branch adds styling to make developing layouts eazy
+*This minor update adds styling to make developing layouts eazy
 with blueprint background and semitransparents divs.*
 
 * 0.3.1 Update: ./public/index.html
 * 0.3.2 Update: ./src/components/data/item
 * 0.3.3 Update: ./src/layout/default.jsx
 
-## v 1.0 Release
-*This Concludes version 1 of the project, the project can now
-be used to quickly deploy professional React web applications.*
+## 1.0 Release
+*This concludes version 1.0 of the project. The project can now
+be used to quickly deploy professional React web applications.
+Please checkout branches of this repo for more functionality.*
 
 ---
 
 ## 2.0 Firebase Bransh
-*Setting upp a firebase crud solution.*
+*This major update adds Firebase as a backend solution.*
 
 ### 2.1.0 Creating our Firebase Database
-*We'll need to create an account and database on Firebase so that
+*In this minor update we'll need to create an account and database on Firebase so that
 we can link up our application to it.*
 
 * 2.1.1 Create an account on Firebase
 * 2.1.2 Create a new project
 
 ### 2.2.0 Hooking up our App to Firebase
-*Next we install, import, configure, and initialize our app.*
+*In this minor update we install, import, configure, and initialize our app.*
 
 * 2.2.1 Install firebase modules:
   * firebase
@@ -158,17 +159,17 @@ we can link up our application to it.*
 * 2.2.3 temporarily disable authentication requirements at firebase
 
 ### 2.3.0 Building out our App's Rough Skeleton
-*A simple form with two inputs.*
+*In this minor update we create a simple form with two inputs.*
 
 * 2.3.1 Add: ./src/components/input/index.jsx
 
 ### 2.4.0 Add styling
-*Let's make it look cool.*
+*In this minor update we fix some styling in the new form*
 
 * 2.4.1 Update ./public/index.html
 
 ### 2.5.0 Connecting our Form to Redux
-*Connect our inputs to Redux state.*
+*In this minor update we connect our inputs to Redux state.*
 
 * 2.5.1 refactor ./src/components/input/index.jsx to use redux
 
