@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-08-15T20:12:11+02:00
+ * @Last modified time: 2017-09-19T14:34:23+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,19 +44,21 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 3.5
  * @Last modified by    : develdoe
- * @Last modified time: 2017-08-15T20:12:11+02:00
+ * @Last modified time: 2017-09-19T14:34:23+02:00
 ##############################################
 
 %cABOUT#######################################
 
-Welcome! I am the Devel, a HTML CSS and
-JavaScript ninja @ Devel Devils.
+Welcome! I am DevelDoe (Andree Ray), a HTML CSS and
+JavaScript ninja @ Wimse Web Development. This is
+skelleton react app that I have created to strap
+my React applications.
 
 ##############################################
 
 %cRELEASELOG#####################################
 
-0.0 Major (Framework) branch
+%cv 0.0 Major (Framework) branch
 ---------------------------------
 This bransh adds the basic React skelleton
 and adds a test suit.
@@ -89,7 +91,7 @@ and adds a test suit.
 * 0.0.8 Add: List
 * 0.0.9 Add: Item
 
-0.1 Minor (Redux) branch
+%cv 0.1 Minor (Redux) branch
 ---------------------------------
 This bransh adds Redux to the project for
 eazy handling of application wide data.
@@ -105,7 +107,7 @@ eazy handling of application wide data.
 * 0.1.4 Add: Reducers
 * 0.1.5 Update: component
 
-0.2.0 Minor (Router) branch
+%cv 0.2.0 Minor (Router) branch
 ---------------------------------
 This bransh adds React Router for
 navigation the application.
@@ -128,7 +130,7 @@ navigation the application.
   * Update: package.json
   * Add: environments/development.env
 
-0.3.0 Minor (Layout) branch
+%cv 0.3.0 Minor (Layout) branch
 ---------------------------------
 This bransh adds styling to make developing layouts eazy
 with cool background and transparents divs.
@@ -138,21 +140,39 @@ with cool background and transparents divs.
 * 0.3.3 Update: ./src/layout/default.jsx
 
 
-v 1.0 Release
+%cv 1.0 Release
 ---------------------------------
-*This Concludes version 1 of the project, the project can now
+This Concludes version 1 of the project, the project can now
 be used to quickly deploy professional React web applications.*
 
 
-## Whats next?
+%cv 2.0 Firebase Bransh
 ---------------------------------
-I would start by adding backend/database and authentication of
-preference.
+Setting upp a firebase crud solution.
 
 
 %cBACKLOG#####################################
 
+* Creating our Firebase Database
+* Hooking up our App to Firebase
+* Building out our App's Rough Skeleton
+* Get the CSS
+* Connecting our Form to Component State
+* Adding a new Potluck Item to your Database
+* Retrieving our Potluck Items from the database
+* Displaying Potluck Items on the Page
+* Removing Items from the Page
 
 %cDEBUGG######################################
 `,
-'color: orange','color: #fc8daa','color: #93dcff','color: #93dcff','color: #ccc')
+'color: #FFFFFF',
+'color: #fc8daa',
+'color: #0000ff',
+'color: #e5e5ff',
+'color: #ccccff',
+'color: #b2b2ff',
+'color: #9999ff',
+'color: #FF0000',
+'color: #7f7fff',
+'color: #FFFF00',
+'color: #ccc')
