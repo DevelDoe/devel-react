@@ -132,7 +132,7 @@ with blueprint background and semitransparents divs.*
 * 0.3.2 Update: ./src/components/data/item
 * 0.3.3 Update: ./src/layout/default.jsx
 
-## v 1.0 Release
+### v 1.0 Release
 *This Concludes version 1 of the project, the project can now
 be used to quickly deploy professional React web applications.*
 
