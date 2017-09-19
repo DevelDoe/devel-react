@@ -170,7 +170,7 @@ we can link up our application to it.*
 ## BACKLOG
 
 ### 2.5.0 Connecting our Form to Component State
-### 2.6.0 Adding a new Potluck Item to your Database
-### 2.7.0 Retrieving our Potluck Items from the database
-### 2.8.0 Displaying Potluck Items on the Page
+### 2.6.0 Adding a new Item to your Database
+### 2.7.0 Retrieving our Items from the database
+### 2.8.0 Displaying Items on the Page
 ### 2.9.0 Removing Items from the Page
