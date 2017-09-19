@@ -55,7 +55,7 @@ Clone this repository
 
 ## Release log
 
-### 0.0 The basic React skelleton
+### 0.0 The basic React skeleton
 *This bransh adds the basic React skelleton
 and adds a test suit.*
 
