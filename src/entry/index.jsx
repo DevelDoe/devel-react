@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T21:26:15+02:00
+ * @Last modified time: 2017-09-19T21:40:06+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T21:26:15+02:00
+ * @Last modified time: 2017-09-19T21:40:06+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -59,7 +59,7 @@ my React applications.
 %cRELEASELOG#####################################
 
 %c
-0.0 The basic React skelleton
+0.0 The basic React skeleton
 ---------------------------------
 This bransh adds the basic React skelleton
 and adds a test suit.
@@ -181,13 +181,13 @@ A simple form with two inputs.
 ---------------------------------
 Let's make it look cool.
 
-2.4.1 Update ./public/index.html
+* 2.4.1 Update ./public/index.html
 
-2.5.0 Redux refactoring
+2.5.0 Connecting our Form to Redux
 ---------------------------------
-Refactored 2.3 to use redux.
+Connect our inputs to Redux state.
 
-* 2.5.1 Refactored ./src/components/input/index.jsx
+* 2.5.1 refactor ./src/components/input/index.jsx to use redux
 
 
 %cBACKLOG#####################################
