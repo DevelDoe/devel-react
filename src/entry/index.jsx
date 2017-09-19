@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T16:31:24+02:00
+ * @Last modified time: 2017-09-19T17:36:09+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 3.5
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T16:31:24+02:00
+ * @Last modified time: 2017-09-19T17:36:09+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -59,7 +59,7 @@ my React applications.
 %cRELEASELOG#####################################
 
 %c
-0.0 Major - The basic React skelleton
+0.0 The basic React skelleton
 ---------------------------------
 This bransh adds the basic React skelleton
 and adds a test suit.
@@ -92,7 +92,7 @@ and adds a test suit.
 * 0.0.8 Add: List
 * 0.0.9 Add: Item
 
-0.1 Minor - Implement Redux
+0.1 Implement Redux
 ---------------------------------
 This bransh adds Redux to the project for
 eazy handling of application wide data.
@@ -108,7 +108,7 @@ eazy handling of application wide data.
 * 0.1.4 Add: Reducers
 * 0.1.5 Update: component
 
-0.2.0 Minor - Implement React Router
+0.2.0 Implement React Router
 ---------------------------------
 This bransh adds React Router for
 navigation the application.
@@ -131,7 +131,7 @@ navigation the application.
   * Update: package.json
   * Add: environments/development.env
 
-0.3.0 Minor - Front end styling for eazy layout creation
+0.3 Front end styling for eazy layout creation
 ---------------------------------
 This branch adds styling to make developing layouts eazy
 with blueprint background and semitransparents divs.
@@ -154,7 +154,7 @@ v 2.0 Firebase Bransh
 ---------------------------------
 A firebase crud solution.
 
-2.1.0 Minor - Creating our Firebase Database
+2.1 Creating our Firebase Database
 ---------------------------------
 We'll need to create an account and database on Firebase so that
 we can link up our application to it.
@@ -162,7 +162,7 @@ we can link up our application to it.
 * 2.1.1 Create an account on Firebase
 * 2.1.2 Create a new project
 
-2.2.0 Minor - Hooking up our App to Firebase
+2.2 Hooking up our App to Firebase
 ---------------------------------
 Next we install, import, configure, and initialize our app.
 
@@ -171,18 +171,21 @@ Next we install, import, configure, and initialize our app.
 * 2.2.2 Add: ./src/firebase/index.js
 * 2.2.3 temporarily disable authentication requirements at firebase
 
+2.3.0 Building out our App's Rough Skeleton
+---------------------------------
+A simple form with two inputs.
+
+* 2.3.1 Add: ./src/components/firebase/index.jsx
+
 
 %cBACKLOG#####################################
 
-* Creating our Firebase Database
-* Hooking up our App to Firebase
-* Building out our App's Rough Skeleton
-* Get the CSS
-* Connecting our Form to Component State
-* Adding a new Potluck Item to your Database
-* Retrieving our Potluck Items from the database
-* Displaying Potluck Items on the Page
-* Removing Items from the Page
+2.3.0 Get the CSS
+2.4.0 Connecting our Form to Component State
+2.5.0 Adding a new Potluck Item to your Database
+2.6.0 Retrieving our Potluck Items from the database
+2.7.0 Displaying Potluck Items on the Page
+2.8.0 Removing Items from the Page
 
 %cDEBUGG######################################
 `,

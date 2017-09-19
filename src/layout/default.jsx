@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: default.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-08-15T18:33:27+02:00
+ * @Last modified time: 2017-09-19T17:19:32+02:00
  */
 
 import React from 'react'
@@ -21,6 +21,7 @@ export var defaultLayout = ({ children, location, appName }) => {
               <ul>
                 <li><div><Link to="/">HOME</Link></div></li>
                 <li><div><Link to="/api">API</Link></div></li>
+                <li><div><Link to="/fire">FIREBASE</Link></div></li>
               </ul>
             </aside>
         </div>
