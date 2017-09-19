@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-08-15T20:12:11+02:00
+ * @Last modified time: 2017-09-19T18:21:48+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -42,21 +42,24 @@ console.log(`
  * @Date                : 2017-02-18T23:58:38+01:00
  * @Email               : me@andreeray.se
  * @Site                : andreeray.se
- * @Version             : 3.5
+ * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-08-15T20:12:11+02:00
+ * @Last modified time: 2017-09-19T18:21:48+02:00
 ##############################################
 
 %cABOUT#######################################
 
-Welcome! I am the Devel, a HTML CSS and
-JavaScript ninja @ Devel Devils.
+Welcome! I am DevelDoe (Andree Ray), a HTML CSS and
+JavaScript ninja @ Wimse Web Development. This is
+skelleton react app that I have created to strap
+my React applications.
 
 ##############################################
 
 %cRELEASELOG#####################################
 
-0.0 Major (Framework) branch
+%c
+0.0 The basic React skelleton
 ---------------------------------
 This bransh adds the basic React skelleton
 and adds a test suit.
@@ -89,7 +92,7 @@ and adds a test suit.
 * 0.0.8 Add: List
 * 0.0.9 Add: Item
 
-0.1 Minor (Redux) branch
+0.1 Implement Redux
 ---------------------------------
 This bransh adds Redux to the project for
 eazy handling of application wide data.
@@ -105,7 +108,7 @@ eazy handling of application wide data.
 * 0.1.4 Add: Reducers
 * 0.1.5 Update: component
 
-0.2.0 Minor (Router) branch
+0.2.0 Implement React Router
 ---------------------------------
 This bransh adds React Router for
 navigation the application.
@@ -128,19 +131,18 @@ navigation the application.
   * Update: package.json
   * Add: environments/development.env
 
-0.3.0 Minor (Layout) branch
+0.3 Front end styling for eazy layout creation
 ---------------------------------
-This bransh adds styling to make developing layouts eazy
-with cool background and transparents divs.
+This branch adds styling to make developing layouts eazy
+with blueprint background and semitransparents divs.
 
 * 0.3.1 Update: ./public/index.html
 * 0.3.2 Update: ./src/components/data/item
 * 0.3.3 Update: ./src/layout/default.jsx
 
-
-v 1.0 Release
+1.0 Release
 ---------------------------------
-*This Concludes version 1 of the project, the project can now
+This Concludes version 1 of the project, the project can now
 be used to quickly deploy professional React web applications.*
 
 
