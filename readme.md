@@ -168,9 +168,7 @@ we can link up our application to it.*
 * 2.4.1 Update ./public/index.html
 
 ### 2.5.0 Connecting our Form to Redux
-*Connect our inputs to Redux state. This will force
-a complete re-write and refactoring of our Redux
-implementation.*
+*Connect our inputs to Redux state.*
 
 * 2.5.1 refactor ./src/components/input/index.jsx to use redux
 
