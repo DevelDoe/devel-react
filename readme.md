@@ -140,7 +140,7 @@ Please checkout branches of this repo for more functionality.*
 
 ---
 
-## 1.1 Firebase CRUD Bransh
+### 1.1 Firebase CRUD Bransh
 *This minor update adds Firebase as a backend solution.*
 
 * 1.1.1 Create an account on Firebase
