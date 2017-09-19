@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T21:56:48+02:00
+ * @Last modified time: 2017-09-19T22:03:04+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T21:56:48+02:00
+ * @Last modified time: 2017-09-19T22:03:04+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -155,49 +155,23 @@ Please checkout branches of this repo for more functionality.*
 ---------------------------------
 This major update adds Firebase as a backend solution.
 
-2.1 Creating our Firebase Database
----------------------------------
-In this minor update we'll need to create an account and database on Firebase so that
-we can link up our application to it.
-
-* 2.1.1 Create an account on Firebase
-* 2.1.2 Create a new project
-
-2.2 Hooking up our App to Firebase
----------------------------------
-In this minor update we install, import, configure, and initialize our app.
-
-* 2.2.1 Install firebase modules:
-  * firebase
-* 2.2.2 Add: ./src/firebase/index.js
-* 2.2.3 temporarily disable authentication requirements at firebase
-
-2.3.0 Building out our App's Rough Skeleton
----------------------------------
-In this minor update we create a simple form with two inputs.
-
-* 2.3.1 Add: ./src/components/input/index.jsx
-
-2.4.0 Add styling
----------------------------------
-In this minor update we fix some styling in the new form
-
-* 2.4.1 Update ./public/index.html
-
-2.5.0 Connecting our Form to Redux
----------------------------------
-In this minor update we connect our inputs to Redux state.
-
-* 2.5.1 refactor ./src/components/input/index.jsx to use redux
+* 1.1.1 Create an account on Firebase
+* 1.1.2 Create a new project
+* 1.1.3 Install firebase node module
+* 1.1.4 Add: ./src/firebase/index.js
+* 1.1.5 temporarily disable authentication requirements at firebase
+* 1.1.6 Add: ./src/components/input/index.jsx
+* 1.1.7 Update ./public/index.html styles
+* 1.1.8 refactor ./src/components/input/index.jsx for redux
 
 
 %cBACKLOG#####################################
 
-2.5.0 Connecting our Form to Component State
-2.6.0 Adding a new Item to your Database
-2.7.0 Retrieving our Items from the database
-2.8.0 Displaying Items on the Page
-2.9.0 Removing Items from the Page
+* 1.1.9 Connecting our Form to Component State
+* 1.1.10 Adding a new Item to your Database
+* 1.1.11 Retrieving our Items from the database
+* 1.1.12 Displaying Items on the Page
+* 1.1.13 Removing Items from the Page
 
 %cDEBUGG######################################
 `,

@@ -140,38 +140,18 @@ Please checkout branches of this repo for more functionality.*
 
 ---
 
-## 2.0 Firebase Bransh
-*This major update adds Firebase as a backend solution.*
+## 1.1 Firebase Bransh
+*This minor update adds Firebase as a backend solution.*
 
-### 2.1.0 Creating our Firebase Database
-*In this minor update we'll need to create an account and database on Firebase so that
-we can link up our application to it.*
-
-* 2.1.1 Create an account on Firebase
-* 2.1.2 Create a new project
-
-### 2.2.0 Hooking up our App to Firebase
-*In this minor update we install, import, configure, and initialize our app.*
-
-* 2.2.1 Install firebase modules:
+* 1.1.1 Create an account on Firebase
+* 1.1.2 Create a new project
+* 1.1.3 Install firebase modules:
   * firebase
-* 2.2.2 Add: ./src/firebase/index.js
-* 2.2.3 temporarily disable authentication requirements at firebase
-
-### 2.3.0 Building out our App's Rough Skeleton
-*In this minor update we create a simple form with two inputs.*
-
-* 2.3.1 Add: ./src/components/input/index.jsx
-
-### 2.4.0 Add styling
-*In this minor update we fix some styling in the new form*
-
-* 2.4.1 Update ./public/index.html
-
-### 2.5.0 Connecting our Form to Redux
-*In this minor update we connect our inputs to Redux state.*
-
-* 2.5.1 refactor ./src/components/input/index.jsx to use redux
+* 1.1.4 Add: ./src/firebase/index.js
+* 1.1.5 temporarily disable authentication requirements at firebase
+* 1.1.6 Add: ./src/components/input/index.jsx
+* 1.1.7 Update ./public/index.html
+* 1.1.8 refactor ./src/components/input/index.jsx to use redux
 
 
 ## BACKLOG
