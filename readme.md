@@ -159,4 +159,3 @@ Please checkout branches of this repo for more functionality.*
 * 1.1.10 Retrieving our Items from the database
 * 1.1.11 Displaying Items on the Page
 * 1.1.12 Removing Items from the Page
-* 1.1.13 Refactor, change name of the component to input, etc

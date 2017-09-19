@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T22:06:35+02:00
+ * @Last modified time: 2017-09-19T22:09:36+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T22:06:35+02:00
+ * @Last modified time: 2017-09-19T22:09:36+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -167,11 +167,10 @@ This minor update adds Firebase as a backend CRUD solution.
 
 %cBACKLOG#####################################
 
-* 1.1.9 Connecting our Form to Component State
-* 1.1.10 Adding a new Item to your Database
-* 1.1.11 Retrieving our Items from the database
-* 1.1.12 Displaying Items on the Page
-* 1.1.13 Removing Items from the Page
+* 1.1.9 Adding a new Item to your Database
+* 1.1.10 Retrieving our Items from the database
+* 1.1.11 Displaying Items on the Page
+* 1.1.12 Removing Items from the Page
 
 %cDEBUGG######################################
 `,
