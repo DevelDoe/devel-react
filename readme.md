@@ -139,5 +139,5 @@ be used to quickly deploy professional React web applications.*
 ---
 
 ## Whats next?
-I would start by adding backend/database and authentication of
-preference.
+Check out some of my other Branches at the top of this page,
+or just build whatever you'd like with it.
