@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T22:03:04+02:00
+ * @Last modified time: 2017-09-19T22:04:14+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T22:03:04+02:00
+ * @Last modified time: 2017-09-19T22:04:14+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -151,7 +151,7 @@ Please checkout branches of this repo for more functionality.*
 =================================
 
 %c
-2.0 Firebase Branch
+1.1 Firebase CRUD Branch
 ---------------------------------
 This major update adds Firebase as a backend solution.
 
