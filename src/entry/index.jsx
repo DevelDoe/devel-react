@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T18:12:51+02:00
+ * @Last modified time: 2017-09-19T18:17:11+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T18:12:51+02:00
+ * @Last modified time: 2017-09-19T18:17:11+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -186,12 +186,11 @@ Let's make it look cool.
 
 %cBACKLOG#####################################
 
-2.3.0 Get the CSS
-2.4.0 Connecting our Form to Component State
-2.5.0 Adding a new Potluck Item to your Database
-2.6.0 Retrieving our Potluck Items from the database
-2.7.0 Displaying Potluck Items on the Page
-2.8.0 Removing Items from the Page
+2.5.0 Connecting our Form to Component State
+2.6.0 Adding a new Potluck Item to your Database
+2.7.0 Retrieving our Potluck Items from the database
+2.8.0 Displaying Potluck Items on the Page
+2.9.0 Removing Items from the Page
 
 %cDEBUGG######################################
 `,
