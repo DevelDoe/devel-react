@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T17:36:09+02:00
+ * @Last modified time: 2017-09-19T18:12:51+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -42,9 +42,9 @@ console.log(`
  * @Date                : 2017-02-18T23:58:38+01:00
  * @Email               : me@andreeray.se
  * @Site                : andreeray.se
- * @Version             : 3.5
+ * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T17:36:09+02:00
+ * @Last modified time: 2017-09-19T18:12:51+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -176,6 +176,12 @@ Next we install, import, configure, and initialize our app.
 A simple form with two inputs.
 
 * 2.3.1 Add: ./src/components/firebase/index.jsx
+
+2.4.0 Add styling
+---------------------------------
+Let's make it look cool.
+
+2.4.1 Update ./public/index.html
 
 
 %cBACKLOG#####################################

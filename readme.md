@@ -162,10 +162,13 @@ we can link up our application to it.*
 
 * 2.3.1 Add: ./src/components/fire/index.jsx
 
+### 2.4.0 Add styling
+*Let's make it look cool.*
+
+2.4.1 Update ./public/index.html
 
 ## BACKLOG
 
-### 2.4.0 Get the CSS
 ### 2.5.0 Connecting our Form to Component State
 ### 2.6.0 Adding a new Potluck Item to your Database
 ### 2.7.0 Retrieving our Potluck Items from the database

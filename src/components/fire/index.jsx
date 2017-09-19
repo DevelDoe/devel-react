@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: firebase.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T17:34:45+02:00
+ * @Last modified time: 2017-09-19T18:10:22+02:00
  */
 
 
@@ -14,12 +14,19 @@ class Fire extends Component {
     render() {
         return (
             <div>
-                <div> <h1>Firebase</h1> </div>
                 <div>
                     <form>
-                        <input type="text" name="username" placeholder="Your name" />
-                        <input type="text" name="item" placeholder="Your item" />
-                        <button>Submit</button>
+                        <div>
+                            <label for="name">name</label>
+                            <input type="text" name="name" id="name" placeholder="insert your name" /><br/>
+                        </div>
+                        <div>
+                        <label for="item">item</label>
+                            <input type="text" name="item" id="item" placeholder="insert an item" /><br/>
+                        </div>
+                        <div>
+                            <button>Submit</button>
+                        </div>
                     </form>
                 </div>
                 <div>
