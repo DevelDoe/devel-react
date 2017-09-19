@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T21:40:06+02:00
+ * @Last modified time: 2017-09-19T21:48:51+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,14 +44,14 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T21:40:06+02:00
+ * @Last modified time: 2017-09-19T21:48:51+02:00
 ##############################################
 
 %cABOUT#######################################
 
 Welcome! I am DevelDoe (Andree Ray), a HTML CSS and
 JavaScript ninja @ Wimse Web Development. This is
-skelleton react app that I have created to strap
+skeleton react app that I have created to strap
 my React applications.
 
 ##############################################
@@ -61,7 +61,7 @@ my React applications.
 %c
 0.0 The basic React skeleton
 ---------------------------------
-This bransh adds the basic React skelleton
+This major release adds the basic React skelleton
 and adds a test suit.
 
 * 0.0.1 Install framework modules:
@@ -94,7 +94,7 @@ and adds a test suit.
 
 0.1 Implement Redux
 ---------------------------------
-This bransh adds Redux to the project for
+This minor update adds Redux to the project for
 eazy handling of application wide data.
 
 * 0.1.1 Install Redux modules:
@@ -110,7 +110,7 @@ eazy handling of application wide data.
 
 0.2.0 Implement React Router
 ---------------------------------
-This bransh adds React Router for
+This minor update adds React Router for
 navigation the application.
 
 * 0.2.1 Refactor to ES2016 syntax
@@ -133,7 +133,7 @@ navigation the application.
 
 0.3 Front end styling for eazy layout creation
 ---------------------------------
-This branch adds styling to make developing layouts eazy
+This minor update adds styling to make developing layouts eazy
 with blueprint background and semitransparents divs.
 
 * 0.3.1 Update: ./public/index.html
@@ -144,15 +144,16 @@ with blueprint background and semitransparents divs.
 %c
 1.0 Release
 ---------------------------------
-This Concludes version 1 of the project, the project can now
-be used to quickly deploy professional React web applications.*
+This concludes version 1.0 of the project. The project can now
+be used to quickly deploy professional React web applications.
+Please checkout branches of this repo for more functionality*
 
 =================================
 
 %c
-v 2.0 Firebase Bransh
+2.0 Firebase Branch
 ---------------------------------
-A firebase crud solution.
+This major update adds Firebase as a backend solution.
 
 2.1 Creating our Firebase Database
 ---------------------------------
