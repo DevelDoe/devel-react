@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T21:48:51+02:00
+ * @Last modified time: 2017-09-19T21:56:48+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T21:48:51+02:00
+ * @Last modified time: 2017-09-19T21:56:48+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -146,7 +146,7 @@ with blueprint background and semitransparents divs.
 ---------------------------------
 This concludes version 1.0 of the project. The project can now
 be used to quickly deploy professional React web applications.
-Please checkout branches of this repo for more functionality*
+Please checkout branches of this repo for more functionality.*
 
 =================================
 
@@ -157,7 +157,7 @@ This major update adds Firebase as a backend solution.
 
 2.1 Creating our Firebase Database
 ---------------------------------
-We'll need to create an account and database on Firebase so that
+In this minor update we'll need to create an account and database on Firebase so that
 we can link up our application to it.
 
 * 2.1.1 Create an account on Firebase
@@ -165,7 +165,7 @@ we can link up our application to it.
 
 2.2 Hooking up our App to Firebase
 ---------------------------------
-Next we install, import, configure, and initialize our app.
+In this minor update we install, import, configure, and initialize our app.
 
 * 2.2.1 Install firebase modules:
   * firebase
@@ -174,19 +174,19 @@ Next we install, import, configure, and initialize our app.
 
 2.3.0 Building out our App's Rough Skeleton
 ---------------------------------
-A simple form with two inputs.
+In this minor update we create a simple form with two inputs.
 
 * 2.3.1 Add: ./src/components/input/index.jsx
 
 2.4.0 Add styling
 ---------------------------------
-Let's make it look cool.
+In this minor update we fix some styling in the new form
 
 * 2.4.1 Update ./public/index.html
 
 2.5.0 Connecting our Form to Redux
 ---------------------------------
-Connect our inputs to Redux state.
+In this minor update we connect our inputs to Redux state.
 
 * 2.5.1 refactor ./src/components/input/index.jsx to use redux
 
