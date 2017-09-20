@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T22:09:36+02:00
+ * @Last modified time: 2017-09-20T19:23:05+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-19T22:09:36+02:00
+ * @Last modified time: 2017-09-20T19:23:05+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -157,20 +157,21 @@ This minor update adds Firebase as a backend CRUD solution.
 
 * 1.1.1 Create an account on Firebase
 * 1.1.2 Create a new project
-* 1.1.3 Install firebase node module
-* 1.1.4 Add: ./src/firebase/index.js
+* 1.1.3 Install firebase
+* 1.1.4 Add firebase configuration file
 * 1.1.5 temporarily disable authentication requirements at firebase
-* 1.1.6 Add: ./src/components/input/index.jsx
-* 1.1.7 Update ./public/index.html styles
-* 1.1.8 refactor ./src/components/input/index.jsx for redux
+* 1.1.6 Add an input form
+* 1.1.7 Set styles for inputs & forms
+* 1.1.8 Refactor inputs to use redux
+* 1.1.9 Adding new items to Firebase
+* 1.1.10 Retrieving items from Firebase
 
 
 %cBACKLOG#####################################
 
-* 1.1.9 Adding a new Item to your Database
-* 1.1.10 Retrieving our Items from the database
-* 1.1.11 Displaying Items on the Page
-* 1.1.12 Removing Items from the Page
+* 1.1.11 Fetching items from Firebase
+* 1.1.12 Removing items
+* 1.1.13 Add environments and update configuration file
 
 %cDEBUGG######################################
 `,

@@ -3,8 +3,8 @@
 * @Date:   2017-03-05T16:09:36+01:00
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
- * @Last modified by:   develdoe
- * @Last modified time: 2017-08-14T14:11:14+02:00
+ * @Last modified by:   andreeray
+ * @Last modified time: 2017-09-20T18:31:25+02:00
 */
 
 
@@ -36,11 +36,7 @@ export var itemsReducer = (state = [], action) =>
         case 'ADD_ITEM':
             return [
                 ...state,
-                {
-                    id: nextItemId++,
-                    title: action.title,
-                    genre: action.genre
-                }
+                action.item
             ]
         case 'REMOVE_ITEM':
             return state.filter((item) =>  item.id !== action.id)

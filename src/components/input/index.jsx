@@ -4,13 +4,13 @@
  * @Email:  andreeray@live.com
  * @Filename: firebase.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T21:20:55+02:00
+ * @Last modified time: 2017-09-20T18:23:55+02:00
  */
 
 
 import React     from 'react'
 import {connect} from 'react-redux'
-import {addItem} from 'actions'
+import {startAddItem} from 'actions'
 
 let Input = ({dispatch}) => {
     let title, genre
@@ -22,7 +22,7 @@ let Input = ({dispatch}) => {
             onSubmit={e => {
                 e.preventDefault()
                 if (!title.value.trim() || !genre.value.trim()) { return }
-                dispatch(addItem(title.value,genre.value))
+                dispatch(startAddItem(title.value,genre.value))
                 title.value = ''
                 genre.value = ''
             }}
@@ -30,8 +30,8 @@ let Input = ({dispatch}) => {
         <div>
             <label>Title:</label>
                 <input
-                    ref={node => {
-                        title = node
+                    ref={input => {
+                        title = input
                     }}
                 />
 
@@ -39,8 +39,8 @@ let Input = ({dispatch}) => {
         <div>
             <label>Genre:</label>
                 <input
-                    ref={node => {
-                        genre = node
+                    ref={input => {
+                        genre = input
                     }}
                 />
 

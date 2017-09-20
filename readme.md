@@ -145,17 +145,18 @@ Please checkout branches of this repo for more functionality.*
 
 * 1.1.1 Create an account on Firebase
 * 1.1.2 Create a new project
-* 1.1.3 Install firebase modules:
-  * firebase
-* 1.1.4 Add: ./src/firebase/index.js
+* 1.1.3 Install firebase
+* 1.1.4 Add firebase configuration file
 * 1.1.5 temporarily disable authentication requirements at firebase
-* 1.1.6 Add: ./src/components/input/index.jsx
-* 1.1.7 Update ./public/index.html
-* 1.1.8 refactor ./src/components/input/index.jsx to use redux
+* 1.1.6 Add an input form
+* 1.1.7 Set styles for inputs & forms
+* 1.1.8 Refactor inputs to use redux
+* 1.1.9 Adding new items to Firebase
+* 1.1.10 Retrieving items from Firebase
 
 
 ## BACKLOG
-* 1.1.9 Adding a new Item to your Database
-* 1.1.10 Retrieving our Items from the database
-* 1.1.11 Displaying Items on the Page
-* 1.1.12 Removing Items from the Page
+
+* 1.1.11 Fetching items from Firebase
+* 1.1.12 Removing items
+* 1.1.13 Add environments and update configuration file
