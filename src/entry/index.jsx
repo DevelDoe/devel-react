@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-20T19:23:05+02:00
+ * @Last modified time: 2017-09-21T10:27:17+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-20T19:23:05+02:00
+ * @Last modified time: 2017-09-21T10:27:17+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -163,13 +163,13 @@ This minor update adds Firebase as a backend CRUD solution.
 * 1.1.6 Add an input form
 * 1.1.7 Set styles for inputs & forms
 * 1.1.8 Refactor inputs to use redux
-* 1.1.9 Adding new items to Firebase
-* 1.1.10 Retrieving items from Firebase
+* 1.1.9 Pushing new items to Firebase
+* 1.1.10 Fetching items from Firebase
 
 
 %cBACKLOG#####################################
 
-* 1.1.11 Fetching items from Firebase
+* 1.1.11 Displaying items from Firebase
 * 1.1.12 Removing items
 * 1.1.13 Add environments and update configuration file
 

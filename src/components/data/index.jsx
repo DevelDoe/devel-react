@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T21:24:34+02:00
+ * @Last modified time: 2017-09-21T10:22:55+02:00
 */
 
 
@@ -12,6 +12,7 @@
 import React      from 'react'
 import * as Redux from 'react-redux'
 import * as actions from 'actions'
+import {fetchItems, changeStatus} from 'actions'
 
 import List       from 'data/list'
 
@@ -22,8 +23,8 @@ export var App = React.createClass({
     componentWillMount() {
         var {dispatch} = this.props
         document.title = this.props.appName + ": welcome"
-        dispatch(actions.removeItem(2))
-        dispatch(actions.changeStatus('idle'))
+        dispatch(fetchItems())
+        dispatch(changeStatus('idle'))
     },
 
     render: function () {

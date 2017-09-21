@@ -4,13 +4,13 @@
  * @Email:  andreeray@live.com
  * @Filename: firebase.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-20T18:23:55+02:00
+ * @Last modified time: 2017-09-21T09:49:15+02:00
  */
 
 
 import React     from 'react'
 import {connect} from 'react-redux'
-import {startAddItem} from 'actions'
+import {pushItem} from 'actions'
 
 let Input = ({dispatch}) => {
     let title, genre
@@ -22,7 +22,7 @@ let Input = ({dispatch}) => {
             onSubmit={e => {
                 e.preventDefault()
                 if (!title.value.trim() || !genre.value.trim()) { return }
-                dispatch(startAddItem(title.value,genre.value))
+                dispatch(pushItem(title.value,genre.value))
                 title.value = ''
                 genre.value = ''
             }}

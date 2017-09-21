@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-20T19:21:31+02:00
+ * @Last modified time: 2017-09-21T10:23:51+02:00
 */
 
 import Axios from 'Axios'
@@ -30,7 +30,7 @@ export var addItem = (item) =>
         item
     }
 }
-export var startAddItem = (title,genre) => {
+export var pushItem = (title,genre) => {
     return (dispatch, getState) => {
 
         var item = {
@@ -53,6 +53,28 @@ export var startAddItem = (title,genre) => {
         })
     }
 
+}
+export var addItems = (items) => {
+    return {
+        type: 'ADD_ITEMS',
+        items
+    }
+}
+export var fetchItems = () => {
+    return (dispatch, getState) => {
+        var itemRef = firebaseRef.child('items')
+        return itemRef.once('value').then((ss) => {
+            var items = ss.val() || {},
+                parse = []
+            Object.keys(items).forEach((id) => {
+                parse.push({
+                    id,
+                    ...items[id]
+                })
+            })
+            dispatch(addItems(parse))
+        })
+    }
 }
 export var removeItem = (id) =>
 {

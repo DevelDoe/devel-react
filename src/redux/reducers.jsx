@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-20T18:31:25+02:00
+ * @Last modified time: 2017-09-21T10:23:56+02:00
 */
 
 
@@ -28,7 +28,6 @@ export var appStatusReducer = (state = "idle", action) => {
             return state
     }
 }
-var nextItemId = 0
 export var itemsReducer = (state = [], action) =>
 {
     switch (action.type)
@@ -37,6 +36,11 @@ export var itemsReducer = (state = [], action) =>
             return [
                 ...state,
                 action.item
+            ]
+        case 'ADD_ITEMS':
+            return [
+                ...state,
+                action.items
             ]
         case 'REMOVE_ITEM':
             return state.filter((item) =>  item.id !== action.id)

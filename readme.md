@@ -151,12 +151,12 @@ Please checkout branches of this repo for more functionality.*
 * 1.1.6 Add an input form
 * 1.1.7 Set styles for inputs & forms
 * 1.1.8 Refactor inputs to use redux
-* 1.1.9 Adding new items to Firebase
-* 1.1.10 Retrieving items from Firebase
+* 1.1.9 Pushing new items to Firebase
+* 1.1.10 Fetching items from Firebase
 
 
 ## BACKLOG
 
-* 1.1.11 Fetching items from Firebase
+* 1.1.11 Displaying items from store
 * 1.1.12 Removing items
 * 1.1.13 Add environments and update configuration file
