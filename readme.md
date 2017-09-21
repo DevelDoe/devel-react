@@ -158,5 +158,6 @@ Please checkout branches of this repo for more functionality.*
 ## BACKLOG
 
 * 1.1.11 Displaying items from store
-* 1.1.12 Removing items
-* 1.1.13 Add environments and update configuration file
+* 1.1.12 Updating items
+* 1.1.13 Removing items
+* 1.1.14 Add environments and update configuration file

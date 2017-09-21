@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-21T10:27:17+02:00
+ * @Last modified time: 2017-09-21T10:28:54+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -44,7 +44,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-21T10:27:17+02:00
+ * @Last modified time: 2017-09-21T10:28:54+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -169,9 +169,10 @@ This minor update adds Firebase as a backend CRUD solution.
 
 %cBACKLOG#####################################
 
-* 1.1.11 Displaying items from Firebase
-* 1.1.12 Removing items
-* 1.1.13 Add environments and update configuration file
+* 1.1.11 Displaying items from store
+* 1.1.12 Updating items
+* 1.1.13 Removing items
+* 1.1.14 Add environments and update configuration file
 
 %cDEBUGG######################################
 `,
