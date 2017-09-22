@@ -77,10 +77,11 @@ Clone this repository
 
 `npm test` to run your test suit.
 
+
 ## Release log
 
 ### 0.0 The basic React skeleton
-*This bransh adds the basic React skelleton
+*This major release adds the basic React skelleton
 and adds a test suit.*
 
 * 0.0.1 Install framework modules:
@@ -96,7 +97,16 @@ and adds a test suit.*
 * 0.0.2 Setup: Webpack
 * 0.0.3 Add: public HTML
 * 0.0.4 Add: Simple server
-* 0.0.5 Install Test suite modules:
+* 0.0.5 Add: Entry
+* 0.0.6 Add: Component
+* 0.0.7 Add: List
+* 0.0.8 Add: Item
+
+### 0.1 Test suit
+*This minor update adds a Karma, Mocha, Expect and
+react-addons-test-utils to the application.*
+
+* 0.1.1 Install Test suite modules:
     * karma
     * karma-webpack
     * karma-mocha
@@ -106,62 +116,77 @@ and adds a test suit.*
     * mocha
     * expect
     * react-addons-test-utils
-* 0.0.6 Add: Entry
-* 0.0.7 Add: Component
-* 0.0.8 Add: List
-* 0.0.9 Add: Item
 
-### 0.1 Implement Redux
-*This bransh adds Redux to the project for
+### 0.2 Implement Redux
+*This minor update adds Redux to the project for
 eazy handling of application wide data.*
 
-* 0.1.1 Install Redux modules:
+* 0.2.1 Install Redux modules:
     * redux
     * react-redux
     * redux-thunk
     * axios
     * redux-mock-store
-* 0.1.2 Add: Store
-* 0.1.3 Add: Actions
-* 0.1.4 Add: Reducers
-* 0.1.5 Update: component
+* 0.2.2 Add: Store
+* 0.2.3 Add: Actions
+* 0.2.4 Add: Reducers
+* 0.2.5 Update: component
 
-### 0.2 Implement React Router
-*This bransh adds React Router for
+### 0.3 Implement React Router
+*This minor update adds React Router for
 navigation the application.*
 
-* 0.2.1 Refactor to ES2016 syntax
-* 0.2.2 Install Router modules:
+* 0.3.1 Refactor to ES2016 syntax
+* 0.3.2 Install Router modules:
   * react-router
-* 0.2.3 Add: src/router/index
-* 0.2.4 Add: src/router/routing
-* 0.2.5 Update: src/entry
-* 0.2.6 Refactoring:
+* 0.3.3 Add: src/router/index
+* 0.3.4 Add: src/router/routing
+* 0.3.5 Update: src/entry
+* 0.3.6 Refactoring:
   * Remove: src/router/routing
   * Add: src/layout
   * Update: src/router/index
   * Add: components/api
   * Update: components/component to components/data
   * Update: layout/default
-* 0.2.7. Added environments
+* 0.3.7. Added environments
   * Update: webpack.config.js
   * Update: package.json
   * Add: environments/development.env
 
-### 0.3.0 Front end styling for eazy layout creation
-*This branch adds styling to make developing layouts eazy
+### 0.4.0 Front end styling for eazy layout creation
+*This minor update adds styling to make developing layouts eazy
 with blueprint background and semitransparents divs.*
 
 * 0.3.1 Update: ./public/index.html
 * 0.3.2 Update: ./src/components/data/item
 * 0.3.3 Update: ./src/layout/default.jsx
 
-## v 1.0 Release
-*This Concludes version 1 of the project, the project can now
-be used to quickly deploy professional React web applications.*
+## 1.0 Release
+*This concludes version 1.0 of the project. The project can now
+be used to quickly deploy professional React web applications.
+Please checkout branches of this repo for more functionality.*
 
 ---
 
-## Whats next?
-Check out some of my other Branches at the top of this page,
-or just build whatever you'd like with it.
+### 1.1 Firebase CRUD Bransh
+*This minor update adds Firebase as a backend CRUD solution.*
+
+* 1.1.1 Create an account on Firebase
+* 1.1.2 Create a new project
+* 1.1.3 Install firebase
+* 1.1.4 Add firebase configuration file
+* 1.1.5 temporarily disable authentication requirements at firebase
+* 1.1.6 Add an input form
+* 1.1.7 Set styles for inputs & forms
+* 1.1.8 Refactor inputs to use redux
+* 1.1.9 Pushing new items to Firebase
+* 1.1.10 Fetching items from Firebase
+
+
+## BACKLOG
+
+* 1.1.11 Displaying items from store
+* 1.1.12 Updating items
+* 1.1.13 Removing items
+* 1.1.14 Add environments and update configuration file
