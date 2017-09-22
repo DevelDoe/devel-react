@@ -37,9 +37,6 @@ navigation.
   * This concludes version 1.0 of the project. The project is now
 a basic react app that you can build upon and use to quickly deploy professional React web applications.
 
-* 1.1 DevelStrap - Added Firebase CRUD
-  * This minor update adds Firebase as a backend CRUD solution.
-
 ## Webpack & Babel
 
 You will need to have Webpack installed globally in order to build the applicatinon.
