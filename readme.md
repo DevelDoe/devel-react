@@ -33,7 +33,7 @@ eazy handling of application wide data.
   * This minor update adds React Router for
 navigation.
 
-* 0.5 Styling for development
+* 0.5 HTML & CSS
   * This minor update adds styling to make developing layouts eazy
 with blueprint background and semitransparents divs.
 
