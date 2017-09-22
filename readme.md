@@ -9,15 +9,15 @@
 
 
 
-# 1.0 DevelStrap - React skelleton & test suit
+# 1.0 DevelStrap
 
-Bootstrapping React app development.
+* React skelleton
+  * Bootstrapping React app development.
 This major release is the basic skeleton for
 a react application.
 
 * 0.2 DevelStrap - Test Suit
-
-This minor update adds a Karma, Mocha, Expect and
+  * This minor update adds a Karma, Mocha, Expect and
 react-addons-test-utils to the application.
 
 
