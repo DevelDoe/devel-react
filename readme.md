@@ -17,7 +17,7 @@ needs for a complete React solution.
 
 *Please checkout branches of this repo were I have added more functionality.*
 
-* React skelleton
+* 0.1 React skelleton
   * Bootstrapping React app development.
 This major release is the basic skeleton for
 a react application.
