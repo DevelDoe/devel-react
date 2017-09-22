@@ -12,9 +12,9 @@
 # 1.0 DevelStrap - React skelleton & test suit
 
 Bootstrapping React app development.
-This major release is the basek skeleton for
-a react application and test suit for test
-driven development.
+This major release is the basic skeleton for
+a react application and ands  atest suit for
+test driven development.
 
 ## 0.1 DevelStrap - Redux implementation
 
