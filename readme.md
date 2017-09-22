@@ -16,24 +16,20 @@
 This major release is the basic skeleton for
 a react application.
 
-* 0.2 DevelStrap - Test Suit
+* 0.2 Test Suit
   * This minor update adds a Karma, Mocha, Expect and
 react-addons-test-utils to the application.
 
-
-## 0.3 DevelStrap - Redux implementation
-
-This minor update adds Redux to the project for
+* 0.3 Redux
+  * This minor update adds Redux to the project for
 eazy handling of application wide data.
 
-## 0.4 DevelStrap - React Router implementation
-
-This minor update adds React Router for
+* 0.4 React Router
+  * This minor update adds React Router for
 navigation the application.
 
-# 1.1 DevelStrap - Added Firebase CRUD
-
-This minor update adds Firebase as a backend CRUD solution.
+* 1.1 DevelStrap - Added Firebase CRUD
+  * This minor update adds Firebase as a backend CRUD solution.
 
 ## Webpack & Babel
 
