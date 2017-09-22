@@ -34,7 +34,7 @@ eazy handling of application wide data.
 navigation.
 
 * 1.0 Release
-  * This concludes version 1.0 of the project. The project is now
+  * Major Release 1.0. The project is now
 a basic react app that you can build upon and use to quickly deploy professional React web applications.
 
 ## Webpack & Babel
