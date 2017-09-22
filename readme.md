@@ -33,6 +33,10 @@ eazy handling of application wide data.
   * This minor update adds React Router for
 navigation.
 
+* 0.5 Styling for development
+  * This minor update adds styling to make developing layouts eazy
+with blueprint background and semitransparents divs.
+
 * 1.0 Release
   * Major Release 1.0. The project is now
 a basic react app that you can build upon and use to quickly deploy professional React web applications.
@@ -84,7 +88,7 @@ Clone this repository
 *This major release adds the basic React skelleton
 and adds a test suit.*
 
-* 0.0.1 Install node modules:
+* 0.0.1 React skelleton
     * webpack
     * react
     * react-dom
@@ -102,7 +106,7 @@ and adds a test suit.*
 * 0.0.7 Add: List
 * 0.0.8 Add: Item
 
-### 0.1 Test suit
+### 0.1 Test Suit
 *This minor update adds a Karma, Mocha, Expect and
 react-addons-test-utils to the application.*
 
@@ -122,7 +126,7 @@ react-addons-test-utils to the application.*
 * 0.1.5 Add: actions.test.jsx
 * 0.1.6 Add: reducers.test.jsx
 
-### 0.2 Implement Redux
+### 0.2 Redux
 *This minor update adds Redux to the project for
 eazy handling of application wide data.*
 
@@ -137,7 +141,7 @@ eazy handling of application wide data.*
 * 0.2.4 Add: Reducers
 * 0.2.5 Update: component
 
-### 0.3 Implement React Router
+### 0.3 React Router
 *This minor update adds React Router for
 navigation the application.*
 
@@ -159,13 +163,13 @@ navigation the application.*
   * Update: package.json
   * Add: environments/development.env
 
-### 0.4.0 Front end styling for eazy layout creation
+### 0.4.0 Styling for development
 *This minor update adds styling to make developing layouts eazy
 with blueprint background and semitransparents divs.*
 
-* 0.3.1 Update: ./public/index.html
-* 0.3.2 Update: ./src/components/data/item
-* 0.3.3 Update: ./src/layout/default.jsx
+* 0.4.1 Update: ./public/index.html
+* 0.4.2 Update: ./src/components/data/item
+* 0.4.3 Update: ./src/layout/default.jsx
 
 ## 1.0 Release
 *This concludes version 1.0 of the project. The project can now
