@@ -9,11 +9,23 @@
 
 
 
-# DevelStrap 1.0 React, Redux, ReactRouter
+# 1.0 DevelStrap - React skelleton & test suit
 
 Bootstrapping React app development.
+This major release adds the basic
+and adds a test suit.
 
-## DevelStrap 1.1 Added Firebase CRUD
+## 0.1 DevelStrap - Redux implementation
+
+This minor update adds Redux to the project for
+eazy handling of application wide data.
+
+## 0.2 DevelStrap - React Router implementation
+
+This minor update adds React Router for
+navigation the application.
+
+# 1.1 DevelStrap - Added Firebase CRUD
 
 This minor update adds Firebase as a backend CRUD solution.
 
