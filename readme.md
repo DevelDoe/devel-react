@@ -9,7 +9,13 @@
 
 
 
-# 1.0 DevelStrap
+# 1.0 DevelStrap ReactJS
+
+This repository is a starting point for your React
+web app development. It quickly straps all the basic
+needs for a complete React solution.
+
+*Please checkout branches of this repo were I have added more functionality.*
 
 * React skelleton
   * Bootstrapping React app development.
