@@ -15,7 +15,7 @@ Bootstrapping React app development.
 This major release is the basic skeleton for
 a react application.
 
-## 0.2 DevelStrap - Test Suit
+* 0.2 DevelStrap - Test Suit
 
 This minor update adds a Karma, Mocha, Expect and
 react-addons-test-utils to the application.
