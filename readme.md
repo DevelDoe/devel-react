@@ -9,7 +9,7 @@
 
 
 
-# 1.0 DevelStrap ReactJS
+# DevelStrap ReactJS
 
 This repository is a starting point for your React
 web app development. It quickly straps all the basic
