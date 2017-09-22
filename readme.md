@@ -9,9 +9,13 @@
 
 
 
-# DevelStrap, React/Redux/ReactRouter/Firebase
+# DevelStrap 1.0 React, Redux, ReactRouter
 
 Bootstrapping React app development.
+
+# DevelStrap 1.1 Added Firebase CRUD
+
+This minor update adds Firebase as a backend CRUD solution.
 
 ## Webpack & Babel
 
