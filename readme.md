@@ -9,9 +9,36 @@
 
 
 
-# DevelStrap, React & Redux
+# 1.0 DevelStrap ReactJS
 
-Bootstrapping React app development.
+This repository is a starting point for your React
+web app development. It quickly straps all the basic
+needs for a complete React solution.
+
+*Please checkout branches of this repo were I have added more functionality.*
+
+* 0.1 React skelleton
+  * This minor update adds the basic skeleton for
+a react application.
+
+* 0.2 Test Suit
+  * This minor update adds a Karma, Mocha, Expect and
+react-addons-test-utils to the application.
+
+* 0.3 Redux
+  * This minor update adds Redux to the project for
+eazy handling of application wide data.
+
+* 0.4 React Router
+  * This minor update adds React Router for
+navigation.
+
+* 1.0 Release
+  * This concludes version 1.0 of the project. The project is now
+a basic react app that you can build upon and use to quickly deploy professional React web applications.
+
+* 1.1 DevelStrap - Added Firebase CRUD
+  * This minor update adds Firebase as a backend CRUD solution.
 
 ## Webpack & Babel
 
