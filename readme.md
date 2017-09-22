@@ -84,7 +84,7 @@ Clone this repository
 *This major release adds the basic React skelleton
 and adds a test suit.*
 
-* 0.0.1 Install framework modules:
+* 0.0.1 Install node modules:
     * webpack
     * react
     * react-dom
@@ -106,7 +106,7 @@ and adds a test suit.*
 *This minor update adds a Karma, Mocha, Expect and
 react-addons-test-utils to the application.*
 
-* 0.1.1 Install Test suite modules:
+* 0.1.1 Install Test node modules:
     * karma
     * karma-webpack
     * karma-mocha
@@ -116,12 +116,17 @@ react-addons-test-utils to the application.*
     * mocha
     * expect
     * react-addons-test-utils
+* 0.1.2 Add: component.test.jsx
+* 0.1.3 Add: item.test.jsx
+* 0.1.4 Add: list.test.jsx
+* 0.1.5 Add: actions.test.jsx
+* 0.1.6 Add: reducers.test.jsx
 
 ### 0.2 Implement Redux
 *This minor update adds Redux to the project for
 eazy handling of application wide data.*
 
-* 0.2.1 Install Redux modules:
+* 0.2.1 Install node modules:
     * redux
     * react-redux
     * redux-thunk
