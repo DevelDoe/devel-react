@@ -13,7 +13,7 @@
 
 Bootstrapping React app development.
 
-# DevelStrap 1.1 Added Firebase CRUD
+## DevelStrap 1.1 Added Firebase CRUD
 
 This minor update adds Firebase as a backend CRUD solution.
 
