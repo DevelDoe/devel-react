@@ -9,7 +9,7 @@
 
 
 
-# 1.0 DevelStrap ReactJS
+# DevelStrap ReactJS
 
 This repository is a starting point for your React
 web app development. It quickly straps all the basic
@@ -32,7 +32,7 @@ eazy handling of application wide data.
 navigation.
 
 * 1.0 Release
-  * This concludes version 1.0 of the project. The project is now
+  * Major Release 1.0. The project is now
 a basic react app that you can build upon and use to quickly deploy professional React web applications.
 
 * 1.1 DevelStrap - Added Firebase CRUD
