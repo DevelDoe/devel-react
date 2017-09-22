@@ -13,15 +13,20 @@
 
 Bootstrapping React app development.
 This major release is the basic skeleton for
-a react application and ands  atest suit for
-test driven development.
+a react application.
 
-## 0.1 DevelStrap - Redux implementation
+## 0.2 DevelStrap - Test Suit
+
+This minor update adds a Karma, Mocha, Expect and
+react-addons-test-utils to the application.
+
+
+## 0.3 DevelStrap - Redux implementation
 
 This minor update adds Redux to the project for
 eazy handling of application wide data.
 
-## 0.2 DevelStrap - React Router implementation
+## 0.4 DevelStrap - React Router implementation
 
 This minor update adds React Router for
 navigation the application.
@@ -90,7 +95,16 @@ and adds a test suit.*
 * 0.0.2 Setup: Webpack
 * 0.0.3 Add: public HTML
 * 0.0.4 Add: Simple server
-* 0.0.5 Install Test suite modules:
+* 0.0.5 Add: Entry
+* 0.0.6 Add: Component
+* 0.0.7 Add: List
+* 0.0.8 Add: Item
+
+### 0.1 Test suit
+*This minor update adds a Karma, Mocha, Expect and
+react-addons-test-utils to the application.*
+
+* 0.1.1 Install Test suite modules:
     * karma
     * karma-webpack
     * karma-mocha
@@ -100,49 +114,45 @@ and adds a test suit.*
     * mocha
     * expect
     * react-addons-test-utils
-* 0.0.6 Add: Entry
-* 0.0.7 Add: Component
-* 0.0.8 Add: List
-* 0.0.9 Add: Item
 
-### 0.1 Implement Redux
+### 0.2 Implement Redux
 *This minor update adds Redux to the project for
 eazy handling of application wide data.*
 
-* 0.1.1 Install Redux modules:
+* 0.2.1 Install Redux modules:
     * redux
     * react-redux
     * redux-thunk
     * axios
     * redux-mock-store
-* 0.1.2 Add: Store
-* 0.1.3 Add: Actions
-* 0.1.4 Add: Reducers
-* 0.1.5 Update: component
+* 0.2.2 Add: Store
+* 0.2.3 Add: Actions
+* 0.2.4 Add: Reducers
+* 0.2.5 Update: component
 
-### 0.2 Implement React Router
+### 0.3 Implement React Router
 *This minor update adds React Router for
 navigation the application.*
 
-* 0.2.1 Refactor to ES2016 syntax
-* 0.2.2 Install Router modules:
+* 0.3.1 Refactor to ES2016 syntax
+* 0.3.2 Install Router modules:
   * react-router
-* 0.2.3 Add: src/router/index
-* 0.2.4 Add: src/router/routing
-* 0.2.5 Update: src/entry
-* 0.2.6 Refactoring:
+* 0.3.3 Add: src/router/index
+* 0.3.4 Add: src/router/routing
+* 0.3.5 Update: src/entry
+* 0.3.6 Refactoring:
   * Remove: src/router/routing
   * Add: src/layout
   * Update: src/router/index
   * Add: components/api
   * Update: components/component to components/data
   * Update: layout/default
-* 0.2.7. Added environments
+* 0.3.7. Added environments
   * Update: webpack.config.js
   * Update: package.json
   * Add: environments/development.env
 
-### 0.3.0 Front end styling for eazy layout creation
+### 0.4.0 Front end styling for eazy layout creation
 *This minor update adds styling to make developing layouts eazy
 with blueprint background and semitransparents divs.*
 
