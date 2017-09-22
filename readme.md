@@ -15,8 +15,6 @@ This repository is a starting point for your React
 web app development. It quickly straps all the basic
 needs for a complete React solution.
 
-*Please checkout branches of this repo were I have added more functionality.*
-
 * 0.1 React skelleton
   * This minor update adds the basic skeleton for
 a react application.
