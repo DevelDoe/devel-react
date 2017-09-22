@@ -37,8 +37,6 @@ navigation.
   * This concludes version 1.0 of the project. The project is now
 a basic react app that you can build upon and use to quickly deploy professional React web applications.
 
-*Please checkout branches of this repo were I have added more functionality.*
-
 * 1.1 DevelStrap - Added Firebase CRUD
   * This minor update adds Firebase as a backend CRUD solution.
 
