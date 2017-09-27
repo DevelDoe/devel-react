@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: Movie.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T21:34:50+02:00
+ * @Last modified time: 2017-09-27T13:50:12+02:00
 */
 
 
@@ -13,8 +13,8 @@ var React = require('react'), {connect} = require('react-redux')
 
 export var Item = React.createClass({
     render: function () {
-        var {title,genre} = this.props
-        return <li>Title: {title} Genre: {genre}</li>
+        var {id,prop1,prop2} = this.props
+        return <div>id: {id} Prop1: {prop1} Prop2: {prop2}</div>
     }
 })
 export default connect()(Item)

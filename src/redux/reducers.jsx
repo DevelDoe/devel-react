@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-21T10:23:56+02:00
+ * @Last modified time: 2017-09-27T13:47:46+02:00
 */
 
 
@@ -40,7 +40,7 @@ export var itemsReducer = (state = [], action) =>
         case 'ADD_ITEMS':
             return [
                 ...state,
-                action.items
+                ...action.items
             ]
         case 'REMOVE_ITEM':
             return state.filter((item) =>  item.id !== action.id)

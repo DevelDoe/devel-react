@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: firebase.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-21T09:49:15+02:00
+ * @Last modified time: 2017-09-27T09:48:42+02:00
  */
 
 
@@ -13,7 +13,7 @@ import {connect} from 'react-redux'
 import {pushItem} from 'actions'
 
 let Input = ({dispatch}) => {
-    let title, genre
+    let prop1, prop2
 
     return (
         <div>
@@ -21,26 +21,26 @@ let Input = ({dispatch}) => {
         <form
             onSubmit={e => {
                 e.preventDefault()
-                if (!title.value.trim() || !genre.value.trim()) { return }
-                dispatch(pushItem(title.value,genre.value))
-                title.value = ''
-                genre.value = ''
+                if (!prop1.value.trim() || !prop2.value.trim()) { return }
+                dispatch(pushItem(prop1.value,prop2.value))
+                prop1.value = ''
+                prop2.value = ''
             }}
         >
         <div>
-            <label>Title:</label>
+            <label>prop1:</label>
                 <input
                     ref={input => {
-                        title = input
+                        prop1 = input
                     }}
                 />
 
         </div>
         <div>
-            <label>Genre:</label>
+            <label>prop2:</label>
                 <input
                     ref={input => {
-                        genre = input
+                        prop2 = input
                     }}
                 />
 

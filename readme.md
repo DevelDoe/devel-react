@@ -38,7 +38,7 @@ a basic react app that you can build upon and use to quickly deploy professional
 * 1.1 DevelStrap - Added Firebase CRUD
   * This minor update adds Firebase as a backend CRUD solution.
 
-## Webpack & Babel
+## ES6, Webpack & Babel
 
 You will need to have Webpack installed globally in order to build the applicatinon.
 The project uses Babel with react, es2015, stage-0 presets.
@@ -183,11 +183,11 @@ Please checkout branches of this repo for more functionality.*
 * 1.1.8 Refactor inputs to use redux
 * 1.1.9 Pushing new items to Firebase
 * 1.1.10 Fetching items from Firebase
+* 1.1.11 Displaying items from store
 
 
 ## BACKLOG
 
-* 1.1.11 Displaying items from store
 * 1.1.12 Updating items
 * 1.1.13 Removing items
 * 1.1.14 Add environments and update configuration file

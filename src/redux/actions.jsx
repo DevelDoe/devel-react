@@ -4,11 +4,11 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-21T10:23:51+02:00
+ * @Last modified time: 2017-09-27T13:57:04+02:00
 */
 
 import Axios from 'Axios'
-import Firebase, {firebaseRef} from 'src/firebase'
+import Firebase, {firebaseItemRef} from 'src/firebase'
 
 export var changeAppName = (appName) =>
 {
@@ -30,16 +30,16 @@ export var addItem = (item) =>
         item
     }
 }
-export var pushItem = (title,genre) => {
+export var pushItem = (prop1,prop2) => {
     return (dispatch, getState) => {
 
         var item = {
-            title,
-            genre
+            prop1,
+            prop2
         }
 
         dispatch(changeStatus("Pushing"))
-        var itemRef = firebaseRef.child('items').push(item)
+        var itemRef = firebaseItemRef.push(item)
 
         return itemRef.then(() => {
             dispatch(addItem({
@@ -60,19 +60,32 @@ export var addItems = (items) => {
         items
     }
 }
+
 export var fetchItems = () => {
+
     return (dispatch, getState) => {
-        var itemRef = firebaseRef.child('items')
-        return itemRef.once('value').then((ss) => {
-            var items = ss.val() || {},
+
+        dispatch(changeStatus("Fetching items"))
+
+        return firebaseItemRef.once('value').then((ss) => {
+
+            var items = ss.val() || null,
                 parse = []
-            Object.keys(items).forEach((id) => {
-                parse.push({
-                    id,
-                    ...items[id]
+
+            if (items) {
+
+                Object.keys(items).forEach((id) => {
+                    parse.push({
+                        id,
+                        ...items[id]
+                    })
                 })
-            })
-            dispatch(addItems(parse))
+                dispatch(addItems(parse))
+                dispatch(changeStatus("idle"))
+            }
+        }, (error) => {
+            console.log("error:" + error)
+            dispatch(changeStatus("idle"))
         })
     }
 }
@@ -85,9 +98,8 @@ export var removeItem = (id) =>
 }
 export var fetchLocation = () =>
 {
-    return (dispatch, getState) =>
-    {
-        dispatch(changeStatus("Fetching"))
+    return (dispatch, getState) => {
+        dispatch(changeStatus("Fetching location data"))
         return Axios.get('http://ipinfo.io').then(function (res) {
             var loc = res.data.loc
             var baseUrl = 'http://maps.google.com?q='

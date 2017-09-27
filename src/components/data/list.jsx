@@ -4,7 +4,7 @@
  * @Email:  me@andreeray.se
  * @Filename: list.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-19T21:32:04+02:00
+ * @Last modified time: 2017-09-27T13:45:48+02:00
  */
 
 
@@ -20,8 +20,8 @@ export var List = React.createClass({
             {items} = this.props,
 
             renderItems = () => {
-                if (items.length === 0) return <p className="contain__message">No Data added</p>
-                return items.map((item, index) => { return <div key={index} className="group"><Item  {...item} /> </div>})
+                if (items.length === 0) return <p className="contain__message">No data</p>
+                return items.map((item, index) => { return <Item key={index} {...item} /> })
             }
 
         return <div>{renderItems()}</div>

@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-20T13:15:40+02:00
+ * @Last modified time: 2017-09-27T10:39:42+02:00
  */
 
 import React from 'react'
@@ -20,9 +20,10 @@ const Test = () => <div>Users Page</div>
 export default (
   <Router history={hashHistory}>
     <Route path="/" component={AppLayout}>
-      <IndexRoute component={Data} />
+      <IndexRoute component={Api} />
       <Route path="/api" component={Api} />
       <Route path="/input" component={Input} />
+      <Route  path="/data" component={Data} />
     </Route>
   </Router>
 )

@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-21T10:28:54+02:00
+ * @Last modified time: 2017-09-27T15:06:12+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -26,6 +26,7 @@ console.log(process.env.TEST)
 var appName = "DevelStrap"
 document.title = appName
 store.dispatch(actions.changeAppName(appName))
+store.dispatch(actions.fetchItems())
 
 // RENDER ----------------------------------------------------
 
@@ -44,7 +45,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-21T10:28:54+02:00
+ * @Last modified time: 2017-09-27T15:06:12+02:00
 ##############################################
 
 %cABOUT#######################################
@@ -165,14 +166,14 @@ This minor update adds Firebase as a backend CRUD solution.
 * 1.1.8 Refactor inputs to use redux
 * 1.1.9 Pushing new items to Firebase
 * 1.1.10 Fetching items from Firebase
+* 1.1.11 Displaying items from store
 
 
 %cBACKLOG#####################################
 
-* 1.1.11 Displaying items from store
 * 1.1.12 Updating items
 * 1.1.13 Removing items
-* 1.1.14 Add environments and update configuration file
+* 1.1.14 Add environments and update configuration file & refactor
 
 %cDEBUGG######################################
 `,
