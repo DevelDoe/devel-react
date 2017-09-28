@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-27T13:55:58+02:00
+ * @Last modified time: 2017-09-28T10:56:27+02:00
 */
 
 
@@ -14,7 +14,7 @@ import * as Redux from 'react-redux'
 
 import {fetchItems, changeStatus} from 'actions'
 
-import List       from 'data/list'
+import List       from 'output/list'
 
 
 

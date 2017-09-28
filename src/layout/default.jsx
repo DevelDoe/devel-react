@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: default.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-27T10:38:18+02:00
+ * @Last modified time: 2017-09-28T10:57:27+02:00
  */
 
 import React from 'react'
@@ -21,7 +21,7 @@ export var defaultLayout = ({ children, location, appName }) => {
               <ul>
                 <li><div><Link to="/api">THIRD PARTY API</Link></div></li>
                 <li><div><Link to="/input">INPUT</Link></div></li>
-                <li><div><Link to="/data">DATA</Link></div></li>
+                <li><div><Link to="/output">DATA</Link></div></li>
               </ul>
             </aside>
         </div>

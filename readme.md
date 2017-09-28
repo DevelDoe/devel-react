@@ -91,13 +91,12 @@ and adds a test suit.*
     * babel-preset-es2015
     * babel-preset-react
     * babel-preset-stage-0
-* 0.0.2 Setup: Webpack
-* 0.0.3 Add: public HTML
-* 0.0.4 Add: Simple server
-* 0.0.5 Add: Entry
-* 0.0.6 Add: Component
-* 0.0.7 Add: List
-* 0.0.8 Add: Item
+* 0.0.2 Setup Webpack configuration
+* 0.0.3 Add the html public shell document
+* 0.0.4 Add a basic node server
+* 0.0.5 Add the React entry file
+* 0.0.6 Add a component to ouput data
+* 0.0.7 Add a component to use a third party API
 
 ### 0.1 Test suit
 *This minor update adds a Karma, Mocha, Expect and
@@ -113,8 +112,9 @@ react-addons-test-utils to the application.*
     * mocha
     * expect
     * react-addons-test-utils
+* 0.1.2 Add file to test our components and Redux implementations
 
-### 0.2 Implement Redux
+### 0.2 Redux
 *This minor update adds Redux to the project for
 eazy handling of application wide data.*
 
@@ -122,14 +122,13 @@ eazy handling of application wide data.*
     * redux
     * react-redux
     * redux-thunk
-    * axios
     * redux-mock-store
 * 0.2.2 Add: Store
 * 0.2.3 Add: Actions
 * 0.2.4 Add: Reducers
 * 0.2.5 Update: component
 
-### 0.3 Implement React Router
+### 0.3 React Router
 *This minor update adds React Router for
 navigation the application.*
 
@@ -151,13 +150,13 @@ navigation the application.*
   * Update: package.json
   * Add: environments/development.env
 
-### 0.4.0 Front end styling for eazy layout creation
+### 0.4 Front end styling for eazy layout creation
 *This minor update adds styling to make developing layouts eazy
 with blueprint background and semitransparents divs.*
 
-* 0.3.1 Update: ./public/index.html
-* 0.3.2 Update: ./src/components/data/item
-* 0.3.3 Update: ./src/layout/default.jsx
+* 0.4.1 Update: ./public/index.html
+* 0.4.2 Update: ./src/components/data/item
+* 0.4.3 Update: ./src/layout/default.jsx
 
 ## 1.0 Release
 *This concludes version 1.0 of the project. The project can now
@@ -166,21 +165,28 @@ Please checkout branches of this repo for more functionality.*
 
 ---
 
-### 1.1 Firebase CRUD Bransh
+### 1.1 Add A Third Party API
+*This minor update adds a show case for consuming a third party api.*
+
+* 1.1.1 Install Axios node module
+* 1.1.2 Add Component to display output from the API
+* 1.1.3 Configure Redux to consume the Thrid Party APT
+
+### 1.2 Firebase CRUD Bransh
 *This minor update adds Firebase as a backend CRUD solution.*
 
-* 1.1.1 Create an account on Firebase
-* 1.1.2 Create a new project
-* 1.1.3 Install firebase
-* 1.1.4 Add firebase configuration file
-* 1.1.5 temporarily disable authentication requirements at firebase
-* 1.1.6 Add an input form
-* 1.1.7 Set styles for inputs & forms
-* 1.1.8 Refactor inputs to use redux
-* 1.1.9 Pushing new items to Firebase
-* 1.1.10 Fetching items from Firebase
-* 1.1.11 Displaying items from store
-* 1.1.12 Removing items
+* 1.2.1 Create an account on Firebase
+* 1.2.2 Create a new project
+* 1.2.3 Install firebase
+* 1.2.4 Add firebase configuration file
+* 1.2.5 temporarily disable authentication requirements at firebase
+* 1.2.6 Add an input form
+* 1.2.7 Set styles for inputs & forms
+* 1.2.8 Refactor inputs to use redux
+* 1.2.9 Pushing new items to Firebase
+* 1.2.10 Fetching items from Firebase
+* 1.2.11 Displaying items from store
+* 1.2.12 Removing items
 
 ## BACKLOG
 

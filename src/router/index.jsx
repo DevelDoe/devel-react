@@ -4,14 +4,14 @@
  * @Email:  andreeray@live.com
  * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-27T10:39:42+02:00
+ * @Last modified time: 2017-09-28T10:55:49+02:00
  */
 
 import React from 'react'
 import {Route, Router, IndexRoute, hashHistory} from 'react-router'
 
 import AppLayout from 'default'
-import Data      from 'data'
+import Output      from 'output'
 import Api       from 'api'
 import Input     from 'input'
 
@@ -23,7 +23,7 @@ export default (
       <IndexRoute component={Api} />
       <Route path="/api" component={Api} />
       <Route path="/input" component={Input} />
-      <Route  path="/data" component={Data} />
+      <Route  path="/output" component={Output} />
     </Route>
   </Router>
 )
