@@ -51,7 +51,7 @@ I also have a repo with comprehensive test cases at [DevelTests](https://github.
 
 ## Redux
 
-The Redux implementation is ready to use with the redux devtools extensiion,
+The Redux implementation is ready to use with the redux devtools extension,
 you can install this in chrome at [redux devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
 
 ## Install
