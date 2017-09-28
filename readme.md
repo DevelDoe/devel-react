@@ -51,12 +51,8 @@ I also have a repo with comprehensive test cases at [DevelTests](https://github.
 
 ## Redux
 
-The Redux implementation is ready to use with redux devtools extension in chrome, you need to install this,.
-There is tree different types of state cases included to get you started.
-
-* Simple text field
-* An array
-* api call
+The Redux implementation is ready to use with the redux devtools extensiion,
+you can install this in chrome at [redux devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
 
 ## Install
 
