@@ -4,17 +4,16 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-28T10:56:27+02:00
+ * @Last modified time: 2017-09-28T11:16:04+02:00
 */
 
 
 
-import React      from 'react'
-import * as Redux from 'react-redux'
-
-import {fetchItems, changeStatus} from 'actions'
-
-import List       from 'output/list'
+import React                        from 'react'
+import * as Redux                   from 'react-redux'
+import {fetchItems, changeStatus}   from 'actions'
+import {firebaseItemRef}            from 'src/firebase'
+import List                         from 'output/list'
 
 
 
@@ -22,7 +21,7 @@ export var App = React.createClass({
 
     componentWillMount() {
         var {dispatch} = this.props
-        document.title = this.props.appName + ": welcome"
+        document.title = this.props.appName + ": output"
     },
 
     render: function () {

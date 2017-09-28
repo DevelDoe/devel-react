@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: index.js
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-27T10:52:19+02:00
+ * @Last modified time: 2017-09-28T11:20:20+02:00
  * @Desc:
  *      Firebase konfiguration file with environment variables.
  *      Using environment variables has two benifits:
