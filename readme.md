@@ -184,10 +184,9 @@ Please checkout branches of this repo for more functionality.*
 * 1.1.9 Pushing new items to Firebase
 * 1.1.10 Fetching items from Firebase
 * 1.1.11 Displaying items from store
-
+* 1.1.12 Removing items
 
 ## BACKLOG
 
-* 1.1.12 Updating items
-* 1.1.13 Removing items
+* 1.1.13 Updating items
 * 1.1.14 Add environments and update configuration file

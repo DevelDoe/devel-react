@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-27T13:57:04+02:00
+ * @Last modified time: 2017-09-28T10:11:38+02:00
 */
 
 import Axios from 'Axios'
@@ -69,7 +69,7 @@ export var fetchItems = () => {
 
         return firebaseItemRef.once('value').then((ss) => {
 
-            var items = ss.val() || null,
+            var items = ss.val() || {},
                 parse = []
 
             if (items) {
@@ -89,13 +89,31 @@ export var fetchItems = () => {
         })
     }
 }
-export var removeItem = (id) =>
-{
+
+export var removeItem = (id) => {
     return {
         type: 'REMOVE_ITEM',
         id
     }
 }
+
+export var deleteItem = (id) => {
+
+    return (dispatch, getState) => {
+        dispatch(changeStatus(`Removing item ${id}`))
+
+        var itemRef = firebaseItemRef.child(`${id}`).remove()
+
+        return itemRef.then(() => {
+            dispatch(removeItem(id))
+            dispatch(changeStatus("idle"))
+        }, (error) => {
+            console.log("error:" + error)
+            dispatch(changeStatus("idle"))
+        })
+    }
+}
+
 export var fetchLocation = () =>
 {
     return (dispatch, getState) => {

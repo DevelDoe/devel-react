@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: firebase.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-27T09:48:42+02:00
+ * @Last modified time: 2017-09-28T10:29:42+02:00
  */
 
 
@@ -34,7 +34,6 @@ let Input = ({dispatch}) => {
                         prop1 = input
                     }}
                 />
-
         </div>
         <div>
             <label>prop2:</label>

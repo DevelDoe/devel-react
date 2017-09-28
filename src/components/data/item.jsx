@@ -4,17 +4,34 @@
 * @Email:  me@andreeray.se
 * @Filename: Movie.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-27T13:50:12+02:00
+ * @Last modified time: 2017-09-28T10:08:23+02:00
 */
 
 
 
-var React = require('react'), {connect} = require('react-redux')
+import React     from 'react'
+import {connect} from 'react-redux'
+import {deleteItem} from 'actions'
 
-export var Item = React.createClass({
-    render: function () {
-        var {id,prop1,prop2} = this.props
-        return <div>id: {id} Prop1: {prop1} Prop2: {prop2}</div>
-    }
-})
-export default connect()(Item)
+
+let Item = ({dispatch,id,prop1,prop2}) => {
+    return (
+        <div>
+            <div>ID: {id}</div>
+            <div>Prop1: {prop1}</div>
+            <div>Prop2: {prop2} </div>
+            <button
+                onClick={e => {
+                    e.preventDefault()
+                    dispatch(deleteItem(id))
+                }}>
+                DELETE
+            </button>
+        </div>
+
+        )
+}
+
+Item = connect()(Item)
+
+export default Item
