@@ -4,11 +4,12 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-28T10:11:38+02:00
+ * @Last modified time: 2017-10-07T15:11:36+02:00
 */
 
 import Axios from 'Axios'
-import Firebase, {firebaseItemRef} from 'src/firebase'
+import moment from 'moment'
+import Firebase, {firebasePostsRef} from 'src/firebase'
 
 export var changeAppName = (appName) =>
 {
@@ -23,28 +24,32 @@ export var changeStatus = (status) => {
         status
     }
 }
-export var addItem = (item) =>
+export var addPostState = (post) =>
 {
     return {
-        type: 'ADD_ITEM',
-        item
+        type: 'ADD_POST',
+        post
     }
 }
-export var pushItem = (prop1,prop2) => {
+export var pushPost = (title,summary,body) => {
     return (dispatch, getState) => {
 
-        var item = {
-            prop1,
-            prop2
+        var post = {
+            title,
+            summary,
+            body,
+            published: false,
+            createdAt: moment().unix(),
+            publishedAt: null
         }
 
         dispatch(changeStatus("Pushing"))
-        var itemRef = firebaseItemRef.push(item)
+        var postsRef = firebasePostsRef.push(post)
 
-        return itemRef.then(() => {
-            dispatch(addItem({
-                ...item,
-                id: itemRef.key
+        return postsRef.then(() => {
+            dispatch(addPostState({
+                ...post,
+                id: postsRef.key
             }))
             dispatch(changeStatus("idle"))
         }, (error) => {
@@ -54,33 +59,34 @@ export var pushItem = (prop1,prop2) => {
     }
 
 }
-export var addItems = (items) => {
+
+export var addPostsState = (posts) => {
     return {
-        type: 'ADD_ITEMS',
-        items
+        type: 'ADD_POSTS',
+        posts
     }
 }
 
-export var fetchItems = () => {
+export var fetchPosts = () => {
 
     return (dispatch, getState) => {
 
-        dispatch(changeStatus("Fetching items"))
+        dispatch(changeStatus("Fetching posts"))
 
-        return firebaseItemRef.once('value').then((ss) => {
+        return firebasePostsRef.once('value').then((ss) => {
 
-            var items = ss.val() || {},
+            var posts = ss.val() || {},
                 parse = []
 
-            if (items) {
+            if (posts) {
 
-                Object.keys(items).forEach((id) => {
+                Object.keys(posts).forEach((id) => {
                     parse.push({
                         id,
-                        ...items[id]
+                        ...posts[id]
                     })
                 })
-                dispatch(addItems(parse))
+                dispatch(addPostsState(parse))
                 dispatch(changeStatus("idle"))
             }
         }, (error) => {
@@ -90,22 +96,22 @@ export var fetchItems = () => {
     }
 }
 
-export var removeItem = (id) => {
+export var removePostState = (id) => {
     return {
-        type: 'REMOVE_ITEM',
+        type: 'REMOVE_POST',
         id
     }
 }
 
-export var deleteItem = (id) => {
+export var deletePost = (id) => {
 
     return (dispatch, getState) => {
-        dispatch(changeStatus(`Removing item ${id}`))
+        dispatch(changeStatus(`Removing post ${id}`))
 
-        var itemRef = firebaseItemRef.child(`${id}`).remove()
+        var postRef = firebasePostsRef.child(`${id}`).remove()
 
-        return itemRef.then(() => {
-            dispatch(removeItem(id))
+        return postRef.then(() => {
+            dispatch(removePostState(id))
             dispatch(changeStatus("idle"))
         }, (error) => {
             console.log("error:" + error)
@@ -114,26 +120,33 @@ export var deleteItem = (id) => {
     }
 }
 
-export var fetchLocation = () =>
-{
-    return (dispatch, getState) => {
-        dispatch(changeStatus("Fetching location data"))
-        return Axios.get('http://ipinfo.io').then(function (res) {
-            var loc = res.data.loc
-            var baseUrl = 'http://maps.google.com?q='
-            dispatch(completeLocationFetch(baseUrl+loc))
-            dispatch(changeStatus("idle"))
-        }, (error) => {
-            console.log("error:" + error)
-            dispatch(changeStatus("idle"))
-        })
-
-    }
-}
-export var completeLocationFetch = (url) =>
-{
+export var updatePostState = (id, updates) => {
     return {
-        type: 'COMPLETE_LOCATION_FETCH',
-        url
+        type: 'UPDATE_POST',
+        id,
+        updates
+    }
+}
+
+export var updatePost = (id, published) => {
+
+    return (dispatch, getState) => {
+
+        dispatch(changeStatus(`Updating post ${id}`))
+
+        let postRef = firebasePostsRef.child(`${id}`)
+
+        let updates = {
+            published,
+            publishedAt: published ? moment().unix() : null
+        }
+
+        return postRef.update(updates).then(()=>{
+            dispatch(updatePostState(id,updates))
+            dispatch(changeStatus("idle"))
+        }, (e) => {
+            console.log('error:',e)
+            dispatch(changeStatus("idle"))
+        })
     }
 }

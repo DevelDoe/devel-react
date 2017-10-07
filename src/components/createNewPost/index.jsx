@@ -4,45 +4,44 @@
  * @Email:  andreeray@live.com
  * @Filename: firebase.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-28T10:29:42+02:00
+ * @Last modified time: 2017-10-07T13:47:05+02:00
  */
 
 
 import React     from 'react'
 import {connect} from 'react-redux'
-import {pushItem} from 'actions'
+import {pushPost} from 'actions'
 
 let Input = ({dispatch}) => {
-    let prop1, prop2
-
+    let title, summary, body
     return (
         <div>
 
         <form
             onSubmit={e => {
                 e.preventDefault()
-                if (!prop1.value.trim() || !prop2.value.trim()) { return }
-                dispatch(pushItem(prop1.value,prop2.value))
-                prop1.value = ''
-                prop2.value = ''
+                if (!title.value.trim() || !summary.value.trim() || !body.value.trim()) { return }
+                dispatch(pushPost(title.value,summary.value,body.value))
+                title.value = ''
+                summary.value = ''
+                body.value = ''
             }}
         >
         <div>
-            <label>prop1:</label>
+            <label>Title:</label>
                 <input
                     ref={input => {
-                        prop1 = input
+                        title = input
                     }}
                 />
         </div>
         <div>
-            <label>prop2:</label>
-                <input
-                    ref={input => {
-                        prop2 = input
-                    }}
-                />
-
+            <label>Summary</label>
+            <textarea ref={input => { summary = input }}></textarea>
+        </div>
+        <div>
+            <label>Body</label>
+            <textarea ref={input => { body = input }}></textarea>
         </div>
 
         <button type="submit">SUBMIT</button>

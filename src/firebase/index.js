@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: index.js
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-28T11:20:20+02:00
+ * @Last modified time: 2017-10-03T18:50:15+02:00
  * @Desc:
  *      Firebase konfiguration file with environment variables.
  *      Using environment variables has two benifits:
@@ -22,12 +22,12 @@ import Firebase from 'firebase'
 try {
 
     var config = {
-        apiKey: "AIzaSyDHXPH6kH9wevpz3WRVDcmyuxPLdwCiLow",
-        authDomain: "fir-d45c5.firebaseapp.com",
-        databaseURL: "https://fir-d45c5.firebaseio.com",
-        projectId: "fir-d45c5",
-        storageBucket: "fir-d45c5.appspot.com",
-        messagingSenderId: "1022982205754"
+        apiKey: "AIzaSyDKGe9DnsNYIUooqkJv-DNlaBwqnIfwr3s",
+        authDomain: "wikiandreeray.firebaseapp.com",
+        databaseURL: "https://wikiandreeray.firebaseio.com",
+        projectId: "wikiandreeray",
+        storageBucket: "wikiandreeray.appspot.com",
+        messagingSenderId: "364991953773"
     }
 
     Firebase.initializeApp(config)
@@ -37,5 +37,5 @@ try {
 }
 
 export var firebaseRef = Firebase.database().ref()
-export var firebaseItemRef = firebaseRef.child('/items')
+export var firebasePostsRef = firebaseRef.child('/posts')
 export default Firebase

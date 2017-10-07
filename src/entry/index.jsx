@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-28T10:53:35+02:00
+ * @Last modified time: 2017-10-07T13:08:00+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -23,13 +23,11 @@ store.dispatch(actions.changeStatus('Scripting'))
 console.log(process.env.TEST)
 // SETUP -----------------------------------------------------
 
-var appName = "DevelStrap"
+var appName = "wiki.andreeray.se"
 document.title = appName
 store.dispatch(actions.changeAppName(appName))
 
-store.dispatch(actions.fetchItems())
-
-
+store.dispatch(actions.fetchPosts())
 
 // RENDER ----------------------------------------------------
 
@@ -41,35 +39,32 @@ ReactDOM.render(
 )
 
 console.log(`
-%cMETA########################################
+%cMETA ##########################################
  * @Author              : Andreee Ray <DevelDoe>
  * @Date                : 2017-02-18T23:58:38+01:00
  * @Email               : me@andreeray.se
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-09-28T10:53:35+02:00
-##############################################
+ * @Last modified time: 2017-10-07T13:08:00+02:00
+#################################################
 
-%cABOUT#######################################
+%cABOUT #########################################
 
 Welcome! I am DevelDoe (Andree Ray), a HTML CSS and
 JavaScript ninja @ Wimse Web Development.
-
 This application is a starting point for your React
 web app development. It quickly straps all the basic
 needs for a complete React solution.
 
-##############################################
+#################################################
 
 %cRELEASELOG#####################################
-
 %c
 0.0 The basic React skeleton
 ---------------------------------
 This major release adds the basic React skelleton
 and adds a test suit.
-
 * 0.0.1 Install framework modules:
     * webpack
     * react
@@ -91,7 +86,6 @@ and adds a test suit.
 ---------------------------------
 This minor update adds a Karma, Mocha, Expect and
 react-addons-test-utils to the application.
-
 * 0.1.1 Install Test suite modules:
     * karma
     * karma-webpack
@@ -108,7 +102,6 @@ react-addons-test-utils to the application.
 ---------------------------------
 This minor update adds Redux to the project for
 eazy handling of application wide data.
-
 * 0.2.1 Install Redux modules:
     * redux
     * react-redux
@@ -124,7 +117,6 @@ eazy handling of application wide data.
 ---------------------------------
 This minor update adds React Router for
 navigation the application.
-
 * 0.3.1 Refactor to ES2016 syntax
 * 0.3.2 Install Router modules:
   * react-router
@@ -147,11 +139,9 @@ navigation the application.
 ---------------------------------
 This minor update adds styling to make developing layouts eazy
 with blueprint background and semitransparents divs.
-
 * 0.4.1 Update: ./public/index.html
 * 0.4.2 Update: ./src/components/data/item
 * 0.4.3 Update: ./src/layout/default.jsx
-
 
 %c
 1.0 Release
@@ -159,15 +149,12 @@ with blueprint background and semitransparents divs.
 This concludes version 1.0 of the project. The project can now
 be used to quickly deploy professional React web applications.
 Please checkout branches of this repo for more functionality.*
-
 =================================
 
 %c
-
 1.1 Add A Third Party API
 ---------------------------------
 This minor update adds a show case for consuming a third party api.
-
 * 1.1.1 Install Axios node module
 * 1.1.2 Add Component to display output from the API
 * 1.1.3 Configure Redux to consume the Thrid Party APT
@@ -175,7 +162,6 @@ This minor update adds a show case for consuming a third party api.
 1.2 Firebase CRUD Branch
 ---------------------------------
 This minor update adds Firebase as a backend CRUD solution.
-
 * 1.2.1 Create an account on Firebase
 * 1.2.2 Create a new project
 * 1.2.3 Install firebase
@@ -188,13 +174,11 @@ This minor update adds Firebase as a backend CRUD solution.
 * 1.2.10 Fetching items from Firebase
 * 1.2.11 Displaying items from store
 * 1.2.12 Removing items
-
+* 1.1.13 Updating items
 
 %cBACKLOG#####################################
 
-* 1.1.13 Updating items
 * 1.1.14 Add environments and update configuration file & refactor
-
 %cDEBUGG######################################
 `,
 'color: #FFFFFF',

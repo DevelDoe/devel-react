@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: App.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-28T11:16:04+02:00
+ * @Last modified time: 2017-10-03T21:31:26+02:00
 */
 
 
@@ -12,8 +12,8 @@
 import React                        from 'react'
 import * as Redux                   from 'react-redux'
 import {fetchItems, changeStatus}   from 'actions'
-import {firebaseItemRef}            from 'src/firebase'
-import List                         from 'output/list'
+import {firebasePostsRef}           from 'src/firebase'
+import List                         from 'posts/list'
 
 
 

@@ -4,7 +4,7 @@
  * @Email:  me@andreeray.se
  * @Filename: list.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-28T10:56:33+02:00
+ * @Last modified time: 2017-10-03T21:31:33+02:00
  */
 
 
@@ -12,16 +12,16 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import Item from 'output/item'
+import Item from 'posts/item'
 
 export var List = React.createClass({
     render() {
         var
-            {items} = this.props,
+            {posts} = this.props,
 
             renderItems = () => {
-                if (items.length === 0) return <p className="contain__message">No data</p>
-                return items.map((item, index) => { return <Item key={index} {...item} /> })
+                if (posts.length === 0) return <p className="contain__message">No data</p>
+                return posts.map((post, index) => { return <Item key={index} {...post} /> })
             }
 
         return <div>{renderItems()}</div>
@@ -30,6 +30,6 @@ export var List = React.createClass({
 
 export default connect(
     (state) => {
-        return {items: state.items}
+        return {posts: state.posts}
     }
 )(List)

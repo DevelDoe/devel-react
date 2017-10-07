@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-09-28T10:03:33+02:00
+ * @Last modified time: 2017-10-07T15:11:10+02:00
 */
 
 
@@ -28,38 +28,35 @@ export var appStatusReducer = (state = "idle", action) => {
             return state
     }
 }
-export var itemsReducer = (state = [], action) =>
+export var postsReducer = (state = [], action) =>
 {
     switch (action.type)
     {
-        case 'ADD_ITEM':
+        case 'ADD_POST':
             return [
                 ...state,
-                action.item
+                action.post
             ]
-        case 'ADD_ITEMS':
+        case 'ADD_POSTS':
             return [
                 ...state,
-                ...action.items
+                ...action.posts
             ]
-        case 'REMOVE_ITEM':
-            return state.filter((item) =>  item.id !== action.id)
-        default:
-            return state
-    }
-}
-export var mapReducer = (state = {url: undefined}, action) =>
-{
-    switch (action.type)
-    {
-        case 'START_LOCATION_FETCH':
-            return {
-                url: undefined
-            }
-        case 'COMPLETE_LOCATION_FETCH':
-            return {
-                url: action.url
-            }
+        case 'REMOVE_POST':
+            return state.filter((post) =>  post.id !== action.id)
+        case 'UPDATE_POST':
+            return state.map((post) => {
+                if(post.id === action.id) {
+                    return {
+                        ...post,
+                        ...action.updates
+                    }
+                }
+                else {
+                    return post
+                }
+
+            })
         default:
             return state
     }

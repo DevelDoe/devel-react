@@ -4,26 +4,22 @@
  * @Email:  andreeray@live.com
  * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-08-15T17:43:05+02:00
+ * @Last modified time: 2017-10-03T20:08:29+02:00
  */
 
 import React      from 'react'
 import * as Redux from 'react-redux'
 import * as actions from 'actions'
 
-export var API = React.createClass({
-
-    componentWillMount() {
-        this.props.dispatch(actions.fetchLocation())
-    },
+export var Home = React.createClass({
 
     render: function () {
-        var {apiLocation, appStatus} = this.props,
+        var {appStatus} = this.props,
         renderApplication = () => {
             if (appStatus === "idle") {
                 return (
                     <div>
-                        Your location: {apiLocation.url}
+                        This is my journal
                     </div>
                 )
             }
@@ -37,8 +33,7 @@ export var API = React.createClass({
 export default Redux.connect(
     (state) => {
         return {
-            apiLocation: state.map,
             appStatus: state.appStatus
         }
     }
-)(API)
+)(Home)
