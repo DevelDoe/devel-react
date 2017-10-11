@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-10-07T15:11:10+02:00
+ * @Last modified time: 2017-10-11T20:31:17+02:00
 */
 
 
@@ -57,6 +57,25 @@ export var postsReducer = (state = [], action) =>
                 }
 
             })
+        default:
+            return state
+    }
+}
+/**
+ * Reducer for changing the state of third party api location
+ */
+export var mapReducer = (state = {url: undefined}, action) =>
+{
+    switch (action.type)
+    {
+        case 'START_LOCATION_FETCH':
+            return {
+                url: undefined
+            }
+        case 'COMPLETE_LOCATION_FETCH':
+            return {
+                url: action.url
+            }
         default:
             return state
     }

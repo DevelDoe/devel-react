@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: app.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-10-07T13:08:00+02:00
+ * @Last modified time: 2017-10-11T17:56:10+02:00
 */
 
 // IMPORTS ---------------------------------------------------
@@ -23,7 +23,7 @@ store.dispatch(actions.changeStatus('Scripting'))
 console.log(process.env.TEST)
 // SETUP -----------------------------------------------------
 
-var appName = "wiki.andreeray.se"
+var appName = "DevelStrap"
 document.title = appName
 store.dispatch(actions.changeAppName(appName))
 
@@ -46,7 +46,7 @@ console.log(`
  * @Site                : andreeray.se
  * @Version             : 2.3
  * @Last modified by    : develdoe
- * @Last modified time: 2017-10-07T13:08:00+02:00
+ * @Last modified time: 2017-10-11T17:56:10+02:00
 #################################################
 
 %cABOUT #########################################

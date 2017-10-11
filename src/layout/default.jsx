@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: default.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-10-03T21:32:57+02:00
+ * @Last modified time: 2017-10-11T20:28:15+02:00
  */
 
 import React from 'react'
@@ -22,6 +22,7 @@ export var defaultLayout = ({ children, location, appName }) => {
                 <li><div><Link to="/">HOME</Link></div></li>
                 <li><div><Link to="/createNewPost">Create new post</Link></div></li>
                 <li><div><Link to="/posts">posts</Link></div></li>
+                <li><div><Link to="/api">THIRD PARTY API</Link></div></li>
               </ul>
             </aside>
         </div>

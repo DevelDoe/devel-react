@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-10-07T15:05:05+02:00
+ * @Last modified time: 2017-10-11T20:33:16+02:00
  */
 
 import React from 'react'
@@ -15,6 +15,7 @@ import Home          from 'home'
 import createNewPost from 'createNewPost'
 import updatePost    from 'updatePost'
 import Posts         from 'posts'
+import Api       from 'api'
 
 const Test = () => <div>Users Page</div>
 
@@ -25,6 +26,7 @@ export default (
       <Route path="/createNewPost" component={createNewPost} />
       <Route path="/updatePost/:id" component={updatePost} />
       <Route  path="/Posts" component={Posts} />
+      <Route path="/api" component={Api} />
     </Route>
   </Router>
 )

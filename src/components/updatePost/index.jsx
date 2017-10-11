@@ -4,7 +4,7 @@
  * @Email:  andreeray@live.com
  * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-10-07T16:30:08+02:00
+ * @Last modified time: 2017-10-11T20:25:34+02:00
  */
 
 //  const items = this.props.items.map((item) => (
@@ -28,18 +28,23 @@
  }
 
 export var Update = React.createClass({
-     getPost(id,posts) {
-         console.log(id)
-     },
      onSubmit(e) {
          e.preventDefault()
          if (!title.value.trim() || !summary.value.trim() || !body.value.trim()) { return }
          dispatch(updatePost(props.id,title.value,summary.value,body.value))
      },
      render() {
-         var {posts, params} = this.props
+         var {posts, params} = this.props,
 
-         console.log(posts)
+         getPost = () => {
+             var
+                 filtered = Api.filterTodos(todos, showCompleted, searchString)
+
+             if (filtered.length === 0) return <p className="contain__message">Nothing to do</p>
+
+             return filtered.map((item) => { return <Item key={item.id} {...item} /> })
+         }
+
          return (
              <div>
                  <form onSubmit={this.getPost(params.id,posts)}>

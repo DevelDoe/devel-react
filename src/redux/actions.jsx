@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
  * @Last modified by:   andreeray
- * @Last modified time: 2017-10-07T15:11:36+02:00
+ * @Last modified time: 2017-10-11T20:30:17+02:00
 */
 
 import Axios from 'Axios'
@@ -148,5 +148,32 @@ export var updatePost = (id, published) => {
             console.log('error:',e)
             dispatch(changeStatus("idle"))
         })
+    }
+}
+
+/**
+ * Actions for third party api
+ */
+export var fetchLocation = () =>
+{
+    return (dispatch, getState) => {
+        dispatch(changeStatus("Fetching location data"))
+        return Axios.get('http://ipinfo.io').then(function (res) {
+            var loc = res.data.loc
+            var baseUrl = 'http://maps.google.com?q='
+            dispatch(completeLocationFetch(baseUrl+loc))
+            dispatch(changeStatus("idle"))
+        }, (error) => {
+            console.log("error:" + error)
+            dispatch(changeStatus("idle"))
+        })
+
+    }
+}
+export var completeLocationFetch = (url) =>
+{
+    return {
+        type: 'COMPLETE_LOCATION_FETCH',
+        url
     }
 }
