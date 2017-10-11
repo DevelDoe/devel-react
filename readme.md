@@ -177,25 +177,3 @@ be used to quickly deploy professional React web applications.
 Please checkout branches of this repo for more functionality.*
 
 ---
-
-### 1.1 Firebase CRUD Bransh
-*This minor update adds Firebase as a backend CRUD solution.*
-
-* 1.1.1 Create an account on Firebase
-* 1.1.2 Create a new project
-* 1.1.3 Install firebase
-* 1.1.4 Add firebase configuration file
-* 1.1.5 temporarily disable authentication requirements at firebase
-* 1.1.6 Add an input form
-* 1.1.7 Set styles for inputs & forms
-* 1.1.8 Refactor inputs to use redux
-* 1.1.9 Pushing new items to Firebase
-* 1.1.10 Fetching items from Firebase
-
-
-## BACKLOG
-
-* 1.1.11 Displaying items from store
-* 1.1.12 Updating items
-* 1.1.13 Removing items
-* 1.1.14 Add environments and update configuration file
