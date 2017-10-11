@@ -17,30 +17,6 @@ needs for a complete React solution.
 
 *Please checkout branches of this repo were I have added more functionality.*
 
-* 0.1 React skelleton
-  * This minor update adds the basic skeleton for
-a react application.
-
-* 0.2 Test Suit
-  * This minor update adds a Karma, Mocha, Expect and
-react-addons-test-utils to the application.
-
-* 0.3 Redux
-  * This minor update adds Redux to the project for
-eazy handling of application wide data.
-
-* 0.4 React Router
-  * This minor update adds React Router for
-navigation.
-
-* 0.5 HTML & CSS
-  * This minor update adds styling to make developing layouts eazy
-with blueprint background and semitransparents divs.
-
-* 1.0 Release
-  * Major Release 1.0. The project is now
-a basic react app that you can build upon and use to quickly deploy professional React web applications.
-
 ## Webpack & Babel
 
 You will need to have Webpack installed globally in order to build the applicatinon.
